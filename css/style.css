@@ -1240,3 +1240,46 @@ input:focus-visible {
     outline: 2px solid var(--primary-color);
     outline-offset: 2px;
 }
+
+/* Selection Color */
+::selection {
+    background: #f1c40f;
+    color: white;
+}
+
+::-moz-selection {
+    background: #f1c40f;
+    color: white;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-dark, var(--bg-primary, var(--background, #0f0f23)));
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f1c40f;
+    border-radius: 5px;
+    border: 2px solid var(--bg-dark, var(--bg-primary, var(--background, #0f0f23)));
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #f3cf3f;
+    opacity: 0.8;
+}
+
+/* Glassmorphism Enhancement */
+.header, .modal, .overlay, [role="dialog"], .menu {
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+}
+
+/* Card/Panel Glassmorphism */
+.card, .panel, .sidebar, [class*="card"] {
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
