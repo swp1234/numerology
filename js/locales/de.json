@@ -1,0 +1,80 @@
+{
+  "app": {
+    "title": "Numerologie 🔢 Lebenswegtechnologie-Rechner | DopaBrain",
+    "description": "Berechnen Sie Ihre Lebenswegzahl aus Ihrem Geburtsdatum. Entdecken Sie das Geheimnis der Meisterzahlen 11, 22, 33!",
+    "skipLink": "Zum Hauptinhalt springen",
+    "loading": "Wird geladen..."
+  },
+  "header": {
+    "title": "🔢 Numerologie",
+    "tagline": "Entdecke dein Schicksal durch Zahlen"
+  },
+  "tabs": {
+    "lifeNumber": "🌟 Lebensweg",
+    "expressNumber": "📝 Ausdruckszahl",
+    "compatibility": "💫 Kompatibilität"
+  },
+  "lifeNumber": {
+    "question": "Was ist Ihr Geburtsdatum?",
+    "hint": "Geben Sie Ihr Geburtsdatum ein, um Ihre Lebenswegzahl zu berechnen",
+    "calculate": "Berechnen",
+    "yourNumber": "Ihre Lebenswegzahl",
+    "masterNumber": "✨ Meisterzahl",
+    "personality": "Persönlichkeitsmerkmale",
+    "strengths": "Stärken",
+    "weaknesses": "Schwächen",
+    "career": "Geeignete Berufe",
+    "love": "Liebesverhalten"
+  },
+  "express": {
+    "question": "Geben Sie Ihren Namen ein",
+    "hint": "Ihre Ausdruckszahl zeigt, wie Sie sich natürlicherweise ausdrücken",
+    "placeholder": "z.B. Klaus Mueller",
+    "calculate": "Berechnen",
+    "yourNumber": "Ihre Ausdruckszahl",
+    "communication": "Ausdrucksstil",
+    "talents": "Talente",
+    "challenges": "Herausforderungen"
+  },
+  "compatibility": {
+    "question": "Zahlenkompatibilität prüfen",
+    "hint": "Sehen Sie, wie gut zwei Zahlen harmonieren",
+    "firstNumber": "Erste Zahl",
+    "secondNumber": "Zweite Zahl",
+    "calculate": "Kompatibilität berechnen",
+    "harmony": "Harmoniebewertung",
+    "description": "Kompatibilitätsbeschreibung",
+    "strengths": "Stärken",
+    "cautions": "Vorsicht"
+  },
+  "common": {
+    "luckyColor": "🎨 Glücksfarbe",
+    "luckyDay": "📅 Glückstag",
+    "compatible": "🔗 Kompatible Zahlen",
+    "deepAnalysis": "KI-Tiefenanalyse anzeigen",
+    "deepAnalysisTitle": "KI-Tiefenanalyse",
+    "badge": "✨ KI-Tiefenanalyse",
+    "share": "Ergebnis teilen"
+  },
+  "ads": {
+    "banner": "Anzeigenbereich",
+    "interstitial": "Werbung",
+    "close": "Schließen"
+  },
+  "game": {
+    "back": "DopaBrain-Startseite"
+  },
+  "recommendations": {
+    "title": "Probieren Sie diese auch"
+  },
+  "validation": {
+    "selectDate": "Bitte wählen Sie ein Datum",
+    "invalidDate": "Ungültiges Datum",
+    "enterName": "Bitte geben Sie einen Namen ein",
+    "invalidName": "Ungültiger Name",
+    "validNumbers": "Bitte geben Sie Zahlen zwischen 1-33 ein"
+  },
+  "share": {
+    "copied": "In die Zwischenablage kopiert!"
+  }
+}

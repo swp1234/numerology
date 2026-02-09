@@ -1,0 +1,80 @@
+{
+  "app": {
+    "title": "Numerology 🔢 Life Path Number Calculator | DopaBrain",
+    "description": "Calculate your Life Path Number from birth date and Expression Number from name. Discover the meaning of Master Numbers 11, 22, 33!",
+    "skipLink": "Skip to main content",
+    "loading": "Loading..."
+  },
+  "header": {
+    "title": "🔢 Numerology",
+    "tagline": "Discover your destiny through numbers"
+  },
+  "tabs": {
+    "lifeNumber": "🌟 Life Path",
+    "expressNumber": "📝 Expression",
+    "compatibility": "💫 Compatibility"
+  },
+  "lifeNumber": {
+    "question": "What is your birth date?",
+    "hint": "Enter your birth date to calculate your Life Path Number",
+    "calculate": "Calculate",
+    "yourNumber": "Your Life Path Number",
+    "masterNumber": "✨ Master Number",
+    "personality": "Personality Traits",
+    "strengths": "Strengths",
+    "weaknesses": "Weaknesses",
+    "career": "Compatible Careers",
+    "love": "Love Nature"
+  },
+  "express": {
+    "question": "Enter your name",
+    "hint": "Your Expression Number reveals how you naturally express yourself",
+    "placeholder": "e.g., John Smith",
+    "calculate": "Calculate",
+    "yourNumber": "Your Expression Number",
+    "communication": "Expression Style",
+    "talents": "Talents",
+    "challenges": "Challenges"
+  },
+  "compatibility": {
+    "question": "Check number compatibility",
+    "hint": "See how well two numbers harmonize together",
+    "firstNumber": "First Number",
+    "secondNumber": "Second Number",
+    "calculate": "Calculate Compatibility",
+    "harmony": "Harmony Score",
+    "description": "Compatibility Description",
+    "strengths": "Strengths",
+    "cautions": "Cautions"
+  },
+  "common": {
+    "luckyColor": "🎨 Lucky Color",
+    "luckyDay": "📅 Lucky Day",
+    "compatible": "🔗 Compatible Numbers",
+    "deepAnalysis": "View AI Deep Analysis",
+    "deepAnalysisTitle": "AI Deep Analysis",
+    "badge": "✨ AI Deep Analysis",
+    "share": "Share Result"
+  },
+  "ads": {
+    "banner": "Advertisement Area",
+    "interstitial": "Advertisement",
+    "close": "Close"
+  },
+  "game": {
+    "back": "DopaBrain Home"
+  },
+  "recommendations": {
+    "title": "Try These Too"
+  },
+  "validation": {
+    "selectDate": "Please select a date",
+    "invalidDate": "Invalid date",
+    "enterName": "Please enter a name",
+    "invalidName": "Invalid name",
+    "validNumbers": "Please enter numbers between 1-33"
+  },
+  "share": {
+    "copied": "Copied to clipboard!"
+  }
+}

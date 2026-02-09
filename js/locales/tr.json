@@ -1,0 +1,80 @@
+{
+  "app": {
+    "title": "Numeroloji 🔢 Yaşam Yolu Numarası Hesaplayıcı | DopaBrain",
+    "description": "Doğum tarihinizden yaşam yolu numaranızı hesaplayın. Usta sayılar 11, 22, 33'ün gizemini keşfedin!",
+    "skipLink": "Ana içeriğe atla",
+    "loading": "Yükleniyor..."
+  },
+  "header": {
+    "title": "🔢 Numeroloji",
+    "tagline": "Rakamlar aracılığıyla kaderinizi keşfedin"
+  },
+  "tabs": {
+    "lifeNumber": "🌟 Yaşam Yolu",
+    "expressNumber": "📝 İfade Numarası",
+    "compatibility": "💫 Uyumluluk"
+  },
+  "lifeNumber": {
+    "question": "Doğum tarihiniz nedir?",
+    "hint": "Yaşam yolu numaranızı hesaplamak için doğum tarihinizi girin",
+    "calculate": "Hesapla",
+    "yourNumber": "Sizin Yaşam Yolu Numaranız",
+    "masterNumber": "✨ Usta Sayı",
+    "personality": "Kişilik Özellikleri",
+    "strengths": "Güçlü Yönler",
+    "weaknesses": "Zayıf Yönler",
+    "career": "Uygun Meslekler",
+    "love": "Aşk Doğası"
+  },
+  "express": {
+    "question": "Adınızı girin",
+    "hint": "İfade numaranız kendinizi nasıl ifade ettiğinizi ortaya koyar",
+    "placeholder": "Örn: Ahmet Yılmaz",
+    "calculate": "Hesapla",
+    "yourNumber": "Sizin İfade Numaranız",
+    "communication": "İfade Tarzı",
+    "talents": "Yetenekler",
+    "challenges": "Zorluklar"
+  },
+  "compatibility": {
+    "question": "Sayı uyumluluğunu kontrol edin",
+    "hint": "İki sayının ne kadar iyi uyumlu olduğunu göreceğiz",
+    "firstNumber": "İlk Sayı",
+    "secondNumber": "İkinci Sayı",
+    "calculate": "Uyumluluk Hesapla",
+    "harmony": "Uyum Puanı",
+    "description": "Uyumluluk Açıklaması",
+    "strengths": "Güçlü Yönler",
+    "cautions": "Uyarılar"
+  },
+  "common": {
+    "luckyColor": "🎨 Şanslı Renk",
+    "luckyDay": "📅 Şanslı Gün",
+    "compatible": "🔗 Uyumlu Sayılar",
+    "deepAnalysis": "AI Derin Analizini Görüntüle",
+    "deepAnalysisTitle": "AI Derin Analizi",
+    "badge": "✨ AI Derin Analizi",
+    "share": "Sonucu Paylaş"
+  },
+  "ads": {
+    "banner": "Reklam Alanı",
+    "interstitial": "Reklam",
+    "close": "Kapat"
+  },
+  "game": {
+    "back": "DopaBrain Anasayfa"
+  },
+  "recommendations": {
+    "title": "Bunları da Deneyin"
+  },
+  "validation": {
+    "selectDate": "Lütfen bir tarih seçin",
+    "invalidDate": "Geçersiz tarih",
+    "enterName": "Lütfen bir ad girin",
+    "invalidName": "Geçersiz ad",
+    "validNumbers": "Lütfen 1-33 arasında sayı girin"
+  },
+  "share": {
+    "copied": "Panoya kopyalandı!"
+  }
+}

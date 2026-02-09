@@ -1,0 +1,80 @@
+{
+  "app": {
+    "title": "Numerologi 🔢 Kalkulator Angka Kehidupan | DopaBrain",
+    "description": "Hitung angka kehidupan Anda dari tanggal lahir. Temukan misteri angka master 11, 22, 33!",
+    "skipLink": "Lewati ke konten utama",
+    "loading": "Memuat..."
+  },
+  "header": {
+    "title": "🔢 Numerologi",
+    "tagline": "Temukan takdir Anda melalui angka-angka"
+  },
+  "tabs": {
+    "lifeNumber": "🌟 Angka Kehidupan",
+    "expressNumber": "📝 Angka Ekspresi",
+    "compatibility": "💫 Kompatibilitas"
+  },
+  "lifeNumber": {
+    "question": "Apa tanggal lahir Anda?",
+    "hint": "Masukkan tanggal lahir Anda untuk menghitung angka kehidupan",
+    "calculate": "Hitung",
+    "yourNumber": "Angka Kehidupan Anda",
+    "masterNumber": "✨ Angka Master",
+    "personality": "Ciri-Ciri Kepribadian",
+    "strengths": "Kekuatan",
+    "weaknesses": "Kelemahan",
+    "career": "Karir yang Sesuai",
+    "love": "Sifat Cinta"
+  },
+  "express": {
+    "question": "Masukkan nama Anda",
+    "hint": "Angka ekspresi Anda mengungkapkan cara Anda mengekspresikan diri",
+    "placeholder": "Contoh: Budi Santoso",
+    "calculate": "Hitung",
+    "yourNumber": "Angka Ekspresi Anda",
+    "communication": "Gaya Ekspresi",
+    "talents": "Bakat",
+    "challenges": "Tantangan"
+  },
+  "compatibility": {
+    "question": "Periksa kompatibilitas angka",
+    "hint": "Lihat seberapa baik dua angka bersatu",
+    "firstNumber": "Angka Pertama",
+    "secondNumber": "Angka Kedua",
+    "calculate": "Hitung Kompatibilitas",
+    "harmony": "Skor Harmoni",
+    "description": "Deskripsi Kompatibilitas",
+    "strengths": "Kekuatan",
+    "cautions": "Peringatan"
+  },
+  "common": {
+    "luckyColor": "🎨 Warna Keberuntungan",
+    "luckyDay": "📅 Hari Keberuntungan",
+    "compatible": "🔗 Angka yang Kompatibel",
+    "deepAnalysis": "Lihat Analisis Mendalam AI",
+    "deepAnalysisTitle": "Analisis Mendalam AI",
+    "badge": "✨ Analisis Mendalam AI",
+    "share": "Bagikan Hasil"
+  },
+  "ads": {
+    "banner": "Area Iklan",
+    "interstitial": "Iklan",
+    "close": "Tutup"
+  },
+  "game": {
+    "back": "Beranda DopaBrain"
+  },
+  "recommendations": {
+    "title": "Coba Ini Juga"
+  },
+  "validation": {
+    "selectDate": "Silakan pilih tanggal",
+    "invalidDate": "Tanggal tidak valid",
+    "enterName": "Silakan masukkan nama",
+    "invalidName": "Nama tidak valid",
+    "validNumbers": "Silakan masukkan angka antara 1-33"
+  },
+  "share": {
+    "copied": "Disalin ke papan klip!"
+  }
+}

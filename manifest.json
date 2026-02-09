@@ -1,0 +1,78 @@
+{
+  "name": "운명의 숫자 - 수비학 앱",
+  "short_name": "운명의 숫자",
+  "description": "생년월일로 인생 경로 숫자를 계산하고 수비학의 신비를 알아보세요!",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0f0f23",
+  "theme_color": "#f1c40f",
+  "categories": ["entertainment", "lifestyle"],
+  "screenshots": [
+    {
+      "src": "icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "form_factor": "wide"
+    }
+  ],
+  "icons": [
+    {
+      "src": "icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "인생 경로 숫자 계산",
+      "description": "생년월일로 인생 경로 숫자 계산",
+      "url": "./index.html?tab=lifenum",
+      "icons": [
+        {
+          "src": "icon-192.svg",
+          "sizes": "192x192",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "표현 숫자 계산",
+      "description": "이름으로 표현 숫자 계산",
+      "url": "./index.html?tab=express",
+      "icons": [
+        {
+          "src": "icon-192.svg",
+          "sizes": "192x192",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "숫자 궁합 확인",
+      "description": "두 숫자의 궁합 계산",
+      "url": "./index.html?tab=compatibility",
+      "icons": [
+        {
+          "src": "icon-192.svg",
+          "sizes": "192x192",
+          "type": "image/svg+xml"
+        }
+      ]
+    }
+  ]
+}

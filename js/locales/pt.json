@@ -1,0 +1,80 @@
+{
+  "app": {
+    "title": "Numerologia 🔢 Calculadora de Número da Vida | DopaBrain",
+    "description": "Calcule seu número de vida a partir da data de nascimento. Descubra o mistério dos números mestres 11, 22, 33!",
+    "skipLink": "Pular para o conteúdo principal",
+    "loading": "Carregando..."
+  },
+  "header": {
+    "title": "🔢 Numerologia",
+    "tagline": "Descubra seu destino através dos números"
+  },
+  "tabs": {
+    "lifeNumber": "🌟 Número da Vida",
+    "expressNumber": "📝 Número de Expressão",
+    "compatibility": "💫 Compatibilidade"
+  },
+  "lifeNumber": {
+    "question": "Qual é a sua data de nascimento?",
+    "hint": "Digite sua data de nascimento para calcular seu número da vida",
+    "calculate": "Calcular",
+    "yourNumber": "Seu Número da Vida",
+    "masterNumber": "✨ Número Mestre",
+    "personality": "Traços de Personalidade",
+    "strengths": "Forças",
+    "weaknesses": "Fraquezas",
+    "career": "Carreiras Compatíveis",
+    "love": "Natureza Amorosa"
+  },
+  "express": {
+    "question": "Digite seu nome",
+    "hint": "Seu número de expressão revela como você se expressa naturalmente",
+    "placeholder": "Ex: João Silva",
+    "calculate": "Calcular",
+    "yourNumber": "Seu Número de Expressão",
+    "communication": "Estilo de Expressão",
+    "talents": "Talentos",
+    "challenges": "Desafios"
+  },
+  "compatibility": {
+    "question": "Verifique a compatibilidade de números",
+    "hint": "Veja como dois números se harmonizam bem",
+    "firstNumber": "Primeiro Número",
+    "secondNumber": "Segundo Número",
+    "calculate": "Calcular Compatibilidade",
+    "harmony": "Pontuação de Harmonia",
+    "description": "Descrição de Compatibilidade",
+    "strengths": "Forças",
+    "cautions": "Ressalvas"
+  },
+  "common": {
+    "luckyColor": "🎨 Cor de Sorte",
+    "luckyDay": "📅 Dia de Sorte",
+    "compatible": "🔗 Números Compatíveis",
+    "deepAnalysis": "Ver Análise Profunda de IA",
+    "deepAnalysisTitle": "Análise Profunda de IA",
+    "badge": "✨ Análise Profunda de IA",
+    "share": "Compartilhar Resultado"
+  },
+  "ads": {
+    "banner": "Área de Publicidade",
+    "interstitial": "Publicidade",
+    "close": "Fechar"
+  },
+  "game": {
+    "back": "Página Inicial do DopaBrain"
+  },
+  "recommendations": {
+    "title": "Tente Estes Também"
+  },
+  "validation": {
+    "selectDate": "Por favor, selecione uma data",
+    "invalidDate": "Data inválida",
+    "enterName": "Por favor, digite um nome",
+    "invalidName": "Nome inválido",
+    "validNumbers": "Por favor, digite números entre 1-33"
+  },
+  "share": {
+    "copied": "Copiado para a área de transferência!"
+  }
+}
