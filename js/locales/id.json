@@ -75,6 +75,16 @@
     "validNumbers": "Silakan masukkan angka antara 1-33"
   },
   "share": {
-    "copied": "Disalin ke papan klip!"
+    "copied": "Disalin ke papan klip!",
+    "life": "Nomor jalan hidup saya adalah",
+    "lifeNum": "nomor",
+    "lifeMsg": "!",
+    "aiLife": "Nomor takdir saya dianalisis oleh AI! Temukan maknanya yang misterius!",
+    "express": "Nomor ungkapan saya adalah",
+    "expressNum": "nomor",
+    "expressMsg": "makna tersembunyi",
+    "compat": "dan",
+    "compatNum": "kompatibilitas angka:",
+    "compatPercent": "%! Apa kompatibilitas Anda?"
   }
 }

@@ -75,6 +75,16 @@
     "validNumbers": "Por favor, ingresa números entre 1-33"
   },
   "share": {
-    "copied": "¡Copiado al portapapeles!"
+    "copied": "¡Copiado al portapapeles!",
+    "life": "Mi número de camino de vida es",
+    "lifeNum": "número",
+    "lifeMsg": "!",
+    "aiLife": "¡Mi número de destino analizado por IA! ¡Descubre su significado misterioso!",
+    "express": "Mi número de expresión es",
+    "expressNum": "número",
+    "expressMsg": "significado oculto",
+    "compat": "y",
+    "compatNum": "compatibilidad numérica:",
+    "compatPercent": "%! ¿Cuál es tu compatibilidad?"
   }
 }

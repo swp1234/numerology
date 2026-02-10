@@ -75,6 +75,16 @@
     "validNumbers": "1～33の数字を入力してください"
   },
   "share": {
-    "copied": "クリップボードにコピーしました！"
+    "copied": "クリップボードにコピーしました！",
+    "life": "私の人生数は",
+    "lifeNum": "番",
+    "lifeMsg": "です！",
+    "aiLife": "AI分析の私の運命数！神秘的な意味を発見してください！",
+    "express": "私の表現数は",
+    "expressNum": "番",
+    "expressMsg": "の隠された意味",
+    "compat": "と",
+    "compatNum": "番の数字相性:",
+    "compatPercent": "%! あなたの相性は？"
   }
 }

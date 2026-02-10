@@ -75,6 +75,16 @@
     "validNumbers": "请输入 1-33 之间的数字"
   },
   "share": {
-    "copied": "已复制到剪贴板！"
+    "copied": "已复制到剪贴板！",
+    "life": "我的生命路径数是",
+    "lifeNum": "号",
+    "lifeMsg": "！",
+    "aiLife": "AI分析的我的命运数字！发现其神秘含义！",
+    "express": "我的表达数是",
+    "expressNum": "号",
+    "expressMsg": "的隐藏含义",
+    "compat": "和",
+    "compatNum": "号的数字配对:",
+    "compatPercent": "%! 你的配对是？"
   }
 }

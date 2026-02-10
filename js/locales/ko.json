@@ -75,6 +75,16 @@
     "validNumbers": "1~33 사이의 숫자를 입력해주세요"
   },
   "share": {
-    "copied": "클립보드에 복사되었습니다!"
+    "copied": "클립보드에 복사되었습니다!",
+    "life": "내 인생경로숫자는",
+    "lifeNum": "번",
+    "lifeMsg": "!",
+    "aiLife": "AI가 분석한 내 운명의 숫자! 신비로운 의미를 알아보세요!",
+    "express": "내 표현숫자는",
+    "expressNum": "번",
+    "expressMsg": "의 숨은 의미",
+    "compat": "번과",
+    "compatNum": "번의 숫자 궁합:",
+    "compatPercent": "%! 당신의 궁합은?"
   }
 }

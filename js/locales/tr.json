@@ -75,6 +75,16 @@
     "validNumbers": "Lütfen 1-33 arasında sayı girin"
   },
   "share": {
-    "copied": "Panoya kopyalandı!"
+    "copied": "Panoya kopyalandı!",
+    "life": "Benim yaşam yolu sayım",
+    "lifeNum": "numara",
+    "lifeMsg": "!",
+    "aiLife": "AI tarafından analiz edilen benim kader sayım! Gizemli anlamını keşfedin!",
+    "express": "Benim ifade sayım",
+    "expressNum": "numara",
+    "expressMsg": "gizli anlamı",
+    "compat": "ve",
+    "compatNum": "sayı uyumluluğu:",
+    "compatPercent": "%! Sizin uyumluluğunuz nedir?"
   }
 }

@@ -450,18 +450,18 @@ class NumerologyApp {
         if (type === 'life') {
             const num = this.currentLifeNumber;
             const meaning = NumerologyData.getMeaning(num);
-            shareText = `🔢 내 인생경로숫자는 ${num}번 ${meaning.name}! "${meaning.personality}" ${shareUrl}`;
+            shareText = `🔢 ${i18n.t('share.life')} ${num}${i18n.t('share.lifeNum')} ${meaning.name}${i18n.t('share.lifeMsg')} "${meaning.personality}" ${shareUrl}`;
         } else if (type === 'ai-life') {
-            shareText = `✨ AI가 분석한 내 운명의 숫자! 신비로운 의미를 알아보세요! ${shareUrl}`;
+            shareText = `✨ ${i18n.t('share.aiLife')} ${shareUrl}`;
         } else if (type === 'express') {
             const num = this.currentExpressNumber;
             const meaning = NumerologyData.getMeaning(num);
-            shareText = `💝 내 표현숫자는 ${num}번 ${meaning.name}! "${this.name}"의 숨은 의미 ${shareUrl}`;
+            shareText = `💝 ${i18n.t('share.express')} ${num}${i18n.t('share.expressNum')} ${meaning.name}${i18n.t('share.expressMsg')} "${this.name}" ${shareUrl}`;
         } else if (type === 'compat') {
             const num1 = parseInt(document.getElementById('compat-num1').value);
             const num2 = parseInt(document.getElementById('compat-num2').value);
             const score = NumerologyData.calculateCompatibility(num1, num2);
-            shareText = `💫 ${num1}번과 ${num2}번의 숫자 궁합: ${score}%! 당신의 궁합은? ${shareUrl}`;
+            shareText = `💫 ${num1}${i18n.t('share.compat')} ${num2}${i18n.t('share.compatNum')} ${score}${i18n.t('share.compatPercent')} ${shareUrl}`;
         }
 
         // Copy to clipboard

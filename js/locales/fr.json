@@ -75,6 +75,16 @@
     "validNumbers": "Veuillez entrer des nombres entre 1-33"
   },
   "share": {
-    "copied": "Copié dans le presse-papiers!"
+    "copied": "Copié dans le presse-papiers!",
+    "life": "Mon numéro de chemin de vie est",
+    "lifeNum": "numéro",
+    "lifeMsg": "!",
+    "aiLife": "Mon numéro de destinée analysé par l'IA! Découvrez sa signification mystérieuse!",
+    "express": "Mon numéro d'expression est",
+    "expressNum": "numéro",
+    "expressMsg": "signification cachée",
+    "compat": "et",
+    "compatNum": "compatibilité numérique:",
+    "compatPercent": "%! Quelle est votre compatibilité?"
   }
 }

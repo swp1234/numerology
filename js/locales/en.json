@@ -75,6 +75,16 @@
     "validNumbers": "Please enter numbers between 1-33"
   },
   "share": {
-    "copied": "Copied to clipboard!"
+    "copied": "Copied to clipboard!",
+    "life": "My life path number is",
+    "lifeNum": "number",
+    "lifeMsg": "!",
+    "aiLife": "AI analyzed my destiny number! Discover its mysterious meaning!",
+    "express": "My expression number is",
+    "expressNum": "number",
+    "expressMsg": "hidden meaning",
+    "compat": "and",
+    "compatNum": "number compatibility:",
+    "compatPercent": "%! What is your compatibility?"
   }
 }

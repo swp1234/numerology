@@ -75,6 +75,16 @@
     "validNumbers": "Bitte geben Sie Zahlen zwischen 1-33 ein"
   },
   "share": {
-    "copied": "In die Zwischenablage kopiert!"
+    "copied": "In die Zwischenablage kopiert!",
+    "life": "Meine Lebenspfadnummer ist",
+    "lifeNum": "Nummer",
+    "lifeMsg": "!",
+    "aiLife": "Meine von KI analysierte Schicksalsnummer! Entdecken Sie ihre geheimnisvolle Bedeutung!",
+    "express": "Meine Ausdrucksnummer ist",
+    "expressNum": "Nummer",
+    "expressMsg": "verborgene Bedeutung",
+    "compat": "und",
+    "compatNum": "Zahlkompatibilität:",
+    "compatPercent": "%! Wie ist Ihre Kompatibilität?"
   }
 }
