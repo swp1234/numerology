@@ -7,7 +7,8 @@
   },
   "header": {
     "title": "🔢 Numerologi",
-    "tagline": "Temukan takdir Anda melalui angka-angka"
+    "tagline": "Temukan takdir Anda melalui angka-angka",
+    "users": "<strong>2,847</strong> orang menghitung hari ini"
   },
   "tabs": {
     "lifeNumber": "🌟 Angka Kehidupan",
@@ -18,6 +19,7 @@
     "question": "Apa tanggal lahir Anda?",
     "hint": "Masukkan tanggal lahir Anda untuk menghitung angka kehidupan",
     "calculate": "Hitung",
+    "emptyHint": "Masukkan tanggal lahir Anda untuk menemukan angka takdir Anda secara instan",
     "yourNumber": "Angka Kehidupan Anda",
     "masterNumber": "✨ Angka Master",
     "personality": "Ciri-Ciri Kepribadian",

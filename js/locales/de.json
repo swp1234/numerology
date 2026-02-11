@@ -7,7 +7,8 @@
   },
   "header": {
     "title": "🔢 Numerologie",
-    "tagline": "Entdecke dein Schicksal durch Zahlen"
+    "tagline": "Entdecke dein Schicksal durch Zahlen",
+    "users": "<strong>2,847</strong> Personen haben heute berechnet"
   },
   "tabs": {
     "lifeNumber": "🌟 Lebensweg",
@@ -18,6 +19,7 @@
     "question": "Was ist Ihr Geburtsdatum?",
     "hint": "Geben Sie Ihr Geburtsdatum ein, um Ihre Lebenswegzahl zu berechnen",
     "calculate": "Berechnen",
+    "emptyHint": "Geben Sie Ihr Geburtsdatum ein, um Ihre Schicksalszahl sofort zu entdecken",
     "yourNumber": "Ihre Lebenswegzahl",
     "masterNumber": "✨ Meisterzahl",
     "personality": "Persönlichkeitsmerkmale",

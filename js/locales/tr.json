@@ -7,7 +7,8 @@
   },
   "header": {
     "title": "🔢 Numeroloji",
-    "tagline": "Rakamlar aracılığıyla kaderinizi keşfedin"
+    "tagline": "Rakamlar aracılığıyla kaderinizi keşfedin",
+    "users": "Bugün <strong>2,847</strong> kişi hesapladı"
   },
   "tabs": {
     "lifeNumber": "🌟 Yaşam Yolu",
@@ -18,6 +19,7 @@
     "question": "Doğum tarihiniz nedir?",
     "hint": "Yaşam yolu numaranızı hesaplamak için doğum tarihinizi girin",
     "calculate": "Hesapla",
+    "emptyHint": "Doğum tarihinizi girerek kader numaranızı anında öğrenebilirsiniz",
     "yourNumber": "Sizin Yaşam Yolu Numaranız",
     "masterNumber": "✨ Usta Sayı",
     "personality": "Kişilik Özellikleri",

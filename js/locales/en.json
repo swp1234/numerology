@@ -7,7 +7,8 @@
   },
   "header": {
     "title": "🔢 Numerology",
-    "tagline": "Discover your destiny through numbers"
+    "tagline": "Discover your destiny through numbers",
+    "users": "<strong>2,847</strong> people calculated today"
   },
   "tabs": {
     "lifeNumber": "🌟 Life Path",
@@ -18,6 +19,7 @@
     "question": "What is your birth date?",
     "hint": "Enter your birth date to calculate your Life Path Number",
     "calculate": "Calculate",
+    "emptyHint": "Enter your birth date to discover your destiny number instantly",
     "yourNumber": "Your Life Path Number",
     "masterNumber": "✨ Master Number",
     "personality": "Personality Traits",

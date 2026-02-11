@@ -7,7 +7,8 @@
   },
   "header": {
     "title": "🔢 Numérologie",
-    "tagline": "Découvrez votre destinée à travers les nombres"
+    "tagline": "Découvrez votre destinée à travers les nombres",
+    "users": "<strong>2,847</strong> personnes ont calculé aujourd'hui"
   },
   "tabs": {
     "lifeNumber": "🌟 Nombre de Vie",
@@ -18,6 +19,7 @@
     "question": "Quelle est votre date de naissance?",
     "hint": "Entrez votre date de naissance pour calculer votre nombre de vie",
     "calculate": "Calculer",
+    "emptyHint": "Entrez votre date de naissance pour découvrir votre nombre du destin instantanément",
     "yourNumber": "Votre Nombre de Vie",
     "masterNumber": "✨ Nombre Maître",
     "personality": "Traits de Personnalité",

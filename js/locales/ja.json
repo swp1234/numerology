@@ -7,7 +7,8 @@
   },
   "header": {
     "title": "🔢 数秘術",
-    "tagline": "数字であなたの運命を解読する"
+    "tagline": "数字であなたの運命を解読する",
+    "users": "今日<strong>2,847人</strong>が計算しました"
   },
   "tabs": {
     "lifeNumber": "🌟 人生数",
@@ -18,6 +19,7 @@
     "question": "あなたの誕生日は？",
     "hint": "誕生日を入力すると人生数が計算されます",
     "calculate": "計算する",
+    "emptyHint": "誕生日を入力すると、あなたの運命の数字をすぐに確認できます",
     "yourNumber": "あなたの人生数",
     "masterNumber": "✨ マスターナンバー",
     "personality": "性格特性",

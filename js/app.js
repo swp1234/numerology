@@ -30,10 +30,19 @@ class NumerologyApp {
 
             // Load saved data
             this.loadSavedData();
+
+            // Auto-focus input field after initialization
+            setTimeout(() => {
+                this.autoFocusInput();
+                this.showEmptyStateHint();
+            }, 300);
         } catch (error) {
             console.error('App initialization error:', error);
-            if (window.errorHandler) {
-                window.errorHandler.handleError(error, 'App Initialization');
+            // Hide loader even on error
+            const loader = document.getElementById('app-loader');
+            if (loader) {
+                loader.classList.add('hidden');
+                setTimeout(() => loader.remove(), 300);
             }
         }
     }
@@ -126,6 +135,11 @@ class NumerologyApp {
         // Mark button as active
         document.querySelector(`[data-tab="${tabName}"]`).classList.add('active');
 
+        // Auto-focus input when switching tabs
+        setTimeout(() => {
+            this.autoFocusInput();
+        }, 100);
+
         // Scroll to top
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
@@ -153,6 +167,12 @@ class NumerologyApp {
     displayLifePathResult(number) {
         const meaning = NumerologyData.getMeaning(number);
         if (!meaning) return;
+
+        // Remove empty state hint when result is shown
+        const emptyHint = document.querySelector('.empty-state-hint');
+        if (emptyHint) {
+            emptyHint.remove();
+        }
 
         const resultCard = document.getElementById('life-result');
         const numberGlow = document.getElementById('life-number-glow');
@@ -503,6 +523,41 @@ class NumerologyApp {
             localStorage.setItem('saved_birth_date', value);
         } else if (key === 'name') {
             localStorage.setItem('saved_name', value);
+        }
+    }
+
+    autoFocusInput() {
+        // Focus on the active tab's input field
+        const activeTab = document.querySelector('.tab-content.active');
+        if (activeTab) {
+            const dateInput = activeTab.querySelector('#birth-date');
+            const nameInput = activeTab.querySelector('#name-input');
+            const input = dateInput || nameInput;
+            if (input) {
+                input.focus();
+                // Remove pulse animation after 3 seconds
+                setTimeout(() => {
+                    input.classList.add('animated');
+                }, 3000);
+            }
+        }
+    }
+
+    showEmptyStateHint() {
+        // Show hint when result area is empty
+        const lifeResult = document.getElementById('life-result');
+        const expressResult = document.getElementById('express-result');
+        
+        if (lifeResult && lifeResult.classList.contains('hidden')) {
+            const inputCard = document.querySelector('#lifenum-tab .input-card');
+            if (inputCard && !inputCard.querySelector('.empty-state-hint')) {
+                const hint = document.createElement('p');
+                hint.className = 'empty-state-hint';
+                hint.style.cssText = 'text-align:center;margin-top:16px;padding:12px;background:var(--bg-dark-tertiary);border-radius:8px;color:var(--text-secondary);font-size:13px;opacity:0.9;';
+                hint.setAttribute('data-i18n', 'lifeNumber.emptyHint');
+                hint.textContent = '생년월일을 입력하면 당신의 운명의 숫자를 바로 확인할 수 있어요';
+                inputCard.appendChild(hint);
+            }
         }
     }
 }

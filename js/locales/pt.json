@@ -7,7 +7,8 @@
   },
   "header": {
     "title": "🔢 Numerologia",
-    "tagline": "Descubra seu destino através dos números"
+    "tagline": "Descubra seu destino através dos números",
+    "users": "<strong>2,847</strong> pessoas calcularam hoje"
   },
   "tabs": {
     "lifeNumber": "🌟 Número da Vida",
@@ -18,6 +19,7 @@
     "question": "Qual é a sua data de nascimento?",
     "hint": "Digite sua data de nascimento para calcular seu número da vida",
     "calculate": "Calcular",
+    "emptyHint": "Digite sua data de nascimento para descobrir seu número do destino instantaneamente",
     "yourNumber": "Seu Número da Vida",
     "masterNumber": "✨ Número Mestre",
     "personality": "Traços de Personalidade",
