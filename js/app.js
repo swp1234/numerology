@@ -162,6 +162,7 @@ class NumerologyApp {
         this.currentLifeNumber = number;
         this.displayLifePathResult(number);
         this.saveData('birthDate', birthDate);
+        if(typeof gtag!=='undefined') gtag('event','calculate_life_path');
     }
 
     displayLifePathResult(number) {
@@ -343,6 +344,7 @@ class NumerologyApp {
         this.name = name;
         this.displayExpressionResult(number, name);
         this.saveData('name', name);
+        if(typeof gtag!=='undefined') gtag('event','calculate_expression');
     }
 
     displayExpressionResult(number, name) {
