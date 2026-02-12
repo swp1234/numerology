@@ -512,6 +512,11 @@ class NumerologyApp {
 
         if (savedDate) {
             document.getElementById('birth-date').value = savedDate;
+        } else {
+            // First visit: auto-fill with sample date and show result immediately
+            const sampleDate = '1995-06-15';
+            document.getElementById('birth-date').value = sampleDate;
+            setTimeout(() => this.calculateLifePath(), 100);
         }
         if (savedName) {
             document.getElementById('name-input').value = savedName;
