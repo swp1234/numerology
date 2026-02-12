@@ -1,4 +1,4 @@
-const CACHE_NAME = 'numerology-v1';
+const CACHE_NAME = 'numerology-v2';
 const ASSETS_TO_CACHE = [
     './index.html',
     './css/style.css',
@@ -48,44 +48,27 @@ self.addEventListener('activate', event => {
     self.clients.claim();
 });
 
-// Fetch event - serve from cache, fallback to network
+// Fetch event - network first, fallback to cache
 self.addEventListener('fetch', event => {
-    // Skip non-GET requests
     if (event.request.method !== 'GET') return;
 
+    // Skip external requests (ads, analytics, etc.)
+    if (!event.request.url.startsWith(self.location.origin)) return;
+
     event.respondWith(
-        caches.match(event.request)
+        fetch(event.request)
             .then(response => {
-                // Return cached version if available
-                if (response) return response;
-
-                // Otherwise fetch from network
-                return fetch(event.request)
-                    .then(response => {
-                        // Don't cache if not successful
-                        if (!response || response.status !== 200 || response.type === 'error') {
-                            return response;
-                        }
-
-                        // Clone response for caching
-                        const responseToCache = response.clone();
-
-                        // Cache successful responses (except analytics/ads)
-                        if (!event.request.url.includes('analytics') &&
-                            !event.request.url.includes('ads') &&
-                            !event.request.url.includes('google')) {
-                            caches.open(CACHE_NAME)
-                                .then(cache => cache.put(event.request, responseToCache))
-                                .catch(err => console.error('Cache update failed:', err));
-                        }
-
-                        return response;
-                    })
-                    .catch(err => {
-                        console.error('Fetch failed:', err);
-                        // You could return a custom offline page here
-                        return new Response('Network error occurred', { status: 0, statusText: 'Service Unavailable' });
+                if (response && response.status === 200) {
+                    const responseToCache = response.clone();
+                    caches.open(CACHE_NAME).then(cache => {
+                        cache.put(event.request, responseToCache);
                     });
+                }
+                return response;
+            })
+            .catch(() => {
+                return caches.match(event.request)
+                    .then(cached => cached || caches.match('./index.html'));
             })
     );
 });
