@@ -31,10 +31,17 @@ class NumerologyApp {
             // Load saved data
             this.loadSavedData();
 
+            // Track engagement for GA4 bounce rate
+            this.engagementTracked = false;
+            this.trackFirstInteraction();
+
             // Auto-focus input field after initialization
             setTimeout(() => {
                 this.autoFocusInput();
                 this.showEmptyStateHint();
+                // Pulse the calculate button to draw attention
+                const calcBtn = document.getElementById('calculate-life-btn');
+                if (calcBtn) calcBtn.classList.add('pulse-glow');
             }, 300);
         } catch (error) {
             console.error('App initialization error:', error);
@@ -163,6 +170,7 @@ class NumerologyApp {
         this.displayLifePathResult(number);
         this.saveData('birthDate', birthDate);
         if(typeof gtag!=='undefined') gtag('event','calculate_life_path');
+        this.trackEngagement('calculate_life_path');
     }
 
     displayLifePathResult(number) {
@@ -530,6 +538,33 @@ class NumerologyApp {
             localStorage.setItem('saved_birth_date', value);
         } else if (key === 'name') {
             localStorage.setItem('saved_name', value);
+        }
+    }
+
+    /**
+     * Track first interaction for GA4 engagement (reduces bounce rate)
+     */
+    trackFirstInteraction() {
+        const handler = () => {
+            this.trackEngagement('first_interaction');
+            document.removeEventListener('click', handler);
+            document.removeEventListener('keydown', handler);
+        };
+        document.addEventListener('click', handler, { once: true });
+        document.addEventListener('keydown', handler, { once: true });
+    }
+
+    /**
+     * Track GA4 engagement event
+     */
+    trackEngagement(label) {
+        if (this.engagementTracked) return;
+        this.engagementTracked = true;
+        if (typeof gtag === 'function') {
+            gtag('event', 'engagement', {
+                event_category: 'numerology',
+                event_label: label
+            });
         }
     }
 
