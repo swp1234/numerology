@@ -76,6 +76,12 @@
     "invalidName": "Nombre inválido",
     "validNumbers": "Por favor, ingresa números entre 1-33"
   },
+  "premium": {
+    "lifePurpose": "🎯 Tu propósito de vida",
+    "hiddenPotential": "💎 Potencial oculto",
+    "challenges": "⚡ Desafíos de vida",
+    "successKey": "🌟 Clave del éxito"
+  },
   "share": {
     "copied": "¡Copiado al portapapeles!",
     "life": "Mi número de camino de vida es",

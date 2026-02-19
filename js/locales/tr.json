@@ -76,6 +76,12 @@
     "invalidName": "Geçersiz ad",
     "validNumbers": "Lütfen 1-33 arasında sayı girin"
   },
+  "premium": {
+    "lifePurpose": "🎯 Hayat amacınız",
+    "hiddenPotential": "💎 Gizli potansiyel",
+    "challenges": "⚡ Hayat zorlukları",
+    "successKey": "🌟 Başarının anahtarı"
+  },
   "share": {
     "copied": "Panoya kopyalandı!",
     "life": "Benim yaşam yolu sayım",

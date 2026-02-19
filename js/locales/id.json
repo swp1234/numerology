@@ -76,6 +76,12 @@
     "invalidName": "Nama tidak valid",
     "validNumbers": "Silakan masukkan angka antara 1-33"
   },
+  "premium": {
+    "lifePurpose": "🎯 Tujuan hidup Anda",
+    "hiddenPotential": "💎 Potensi tersembunyi",
+    "challenges": "⚡ Tantangan hidup",
+    "successKey": "🌟 Kunci kesuksesan"
+  },
   "share": {
     "copied": "Disalin ke papan klip!",
     "life": "Nomor jalan hidup saya adalah",

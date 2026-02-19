@@ -76,6 +76,12 @@
     "invalidName": "유효하지 않은 이름입니다",
     "validNumbers": "1~33 사이의 숫자를 입력해주세요"
   },
+  "premium": {
+    "lifePurpose": "🎯 당신의 소명(Life Purpose)",
+    "hiddenPotential": "💎 숨겨진 잠재력",
+    "challenges": "⚡ 도전 과제",
+    "successKey": "🌟 성공의 열쇠"
+  },
   "share": {
     "copied": "클립보드에 복사되었습니다!",
     "life": "내 인생경로숫자는",

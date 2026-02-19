@@ -76,6 +76,12 @@
     "invalidName": "Ungültiger Name",
     "validNumbers": "Bitte geben Sie Zahlen zwischen 1-33 ein"
   },
+  "premium": {
+    "lifePurpose": "🎯 Ihr Lebenszweck",
+    "hiddenPotential": "💎 Verstecktes Potenzial",
+    "challenges": "⚡ Lebensherausforderungen",
+    "successKey": "🌟 Schlüssel zum Erfolg"
+  },
   "share": {
     "copied": "In die Zwischenablage kopiert!",
     "life": "Meine Lebenspfadnummer ist",

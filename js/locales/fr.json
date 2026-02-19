@@ -76,6 +76,12 @@
     "invalidName": "Nom invalide",
     "validNumbers": "Veuillez entrer des nombres entre 1-33"
   },
+  "premium": {
+    "lifePurpose": "🎯 Votre mission de vie",
+    "hiddenPotential": "💎 Potentiel caché",
+    "challenges": "⚡ Défis de vie",
+    "successKey": "🌟 Clé du succès"
+  },
   "share": {
     "copied": "Copié dans le presse-papiers!",
     "life": "Mon numéro de chemin de vie est",

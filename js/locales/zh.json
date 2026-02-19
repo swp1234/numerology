@@ -76,6 +76,12 @@
     "invalidName": "名字无效",
     "validNumbers": "请输入 1-33 之间的数字"
   },
+  "premium": {
+    "lifePurpose": "🎯 你的人生使命",
+    "hiddenPotential": "💎 隐藏的潜力",
+    "challenges": "⚡ 人生挑战",
+    "successKey": "🌟 成功之钥"
+  },
   "share": {
     "copied": "已复制到剪贴板！",
     "life": "我的生命路径数是",

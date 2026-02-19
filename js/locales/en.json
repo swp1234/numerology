@@ -76,6 +76,12 @@
     "invalidName": "Invalid name",
     "validNumbers": "Please enter numbers between 1-33"
   },
+  "premium": {
+    "lifePurpose": "🎯 Your Life Purpose",
+    "hiddenPotential": "💎 Hidden Potential",
+    "challenges": "⚡ Life Challenges",
+    "successKey": "🌟 Key to Success"
+  },
   "share": {
     "copied": "Copied to clipboard!",
     "life": "My life path number is",

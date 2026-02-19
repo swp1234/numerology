@@ -76,6 +76,12 @@
     "invalidName": "無効な名前です",
     "validNumbers": "1～33の数字を入力してください"
   },
+  "premium": {
+    "lifePurpose": "🎯 あなたの使命",
+    "hiddenPotential": "💎 隠れた可能性",
+    "challenges": "⚡ 人生の課題",
+    "successKey": "🌟 成功の鍵"
+  },
   "share": {
     "copied": "クリップボードにコピーしました！",
     "life": "私の人生数は",
