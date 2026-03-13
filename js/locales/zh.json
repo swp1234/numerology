@@ -102,5 +102,14 @@
     "audio": "音频不可用，可继续使用。",
     "network": "请检查网络连接后重试。",
     "general": "出现问题，请刷新或重试。"
+  },
+  "result": {
+    "moreTests": "探索更多测试"
+  },
+  "related": {
+    "dailyTarot": "每日塔罗",
+    "auraReading": "光环解读",
+    "zodiacMatch": "星座配对",
+    "soulAge": "灵魂年龄"
   }
 }

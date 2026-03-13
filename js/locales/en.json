@@ -102,5 +102,14 @@
     "audio": "Audio unavailable. You can still continue.",
     "network": "Please check your connection and try again.",
     "general": "Something went wrong. Please refresh or try again."
+  },
+  "result": {
+    "moreTests": "Explore More Tests"
+  },
+  "related": {
+    "dailyTarot": "Daily Tarot",
+    "auraReading": "Aura Reading",
+    "zodiacMatch": "Zodiac Match",
+    "soulAge": "Soul Age"
   }
 }

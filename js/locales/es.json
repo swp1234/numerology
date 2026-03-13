@@ -102,5 +102,14 @@
     "audio": "Audio no disponible. Puede continuar.",
     "network": "Verifique su conexión e inténtelo de nuevo.",
     "general": "Algo salió mal. Actualice o inténtelo de nuevo."
+  },
+  "result": {
+    "moreTests": "Explorar más tests"
+  },
+  "related": {
+    "dailyTarot": "Tarot diario",
+    "auraReading": "Lectura de aura",
+    "zodiacMatch": "Compatibilidad zodiacal",
+    "soulAge": "Edad del alma"
   }
 }

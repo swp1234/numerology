@@ -102,5 +102,14 @@
     "audio": "Ses kullanılamıyor. Devam edebilirsiniz.",
     "network": "Bağlantınızı kontrol edip tekrar deneyin.",
     "general": "Bir şeyler ters gitti. Yenileyip tekrar deneyin."
+  },
+  "result": {
+    "moreTests": "Daha fazla test keşfet"
+  },
+  "related": {
+    "dailyTarot": "Günlük Tarot",
+    "auraReading": "Aura Okuma",
+    "zodiacMatch": "Burç Uyumu",
+    "soulAge": "Ruh Yaşı"
   }
 }

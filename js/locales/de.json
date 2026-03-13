@@ -102,5 +102,14 @@
     "audio": "Audio nicht verfügbar. Sie können fortfahren.",
     "network": "Bitte Verbindung prüfen und erneut versuchen.",
     "general": "Etwas ist schiefgelaufen. Bitte aktualisieren oder erneut versuchen."
+  },
+  "result": {
+    "moreTests": "Weitere Tests entdecken"
+  },
+  "related": {
+    "dailyTarot": "Tages-Tarot",
+    "auraReading": "Aura-Lesung",
+    "zodiacMatch": "Sternzeichen-Match",
+    "soulAge": "Seelenalter"
   }
 }

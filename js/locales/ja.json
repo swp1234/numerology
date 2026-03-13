@@ -102,5 +102,14 @@
     "audio": "音声が利用できません。続行できます。",
     "network": "接続を確認して再試行してください。",
     "general": "問題が発生しました。更新するか再試行してください。"
+  },
+  "result": {
+    "moreTests": "もっとテストを探す"
+  },
+  "related": {
+    "dailyTarot": "デイリータロット",
+    "auraReading": "オーラリーディング",
+    "zodiacMatch": "星座相性",
+    "soulAge": "魂の年齢"
   }
 }
