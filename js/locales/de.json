@@ -108,8 +108,8 @@
   },
   "related": {
     "dailyTarot": "Tages-Tarot",
-    "auraReading": "Aura-Lesung",
     "zodiacMatch": "Sternzeichen-Match",
-    "soulAge": "Seelenalter"
+    "soulAge": "Seelenalter",
+    "futureSelf": "Zukunfts-Ich"
   }
 }

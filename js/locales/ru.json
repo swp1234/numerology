@@ -108,8 +108,8 @@
   },
   "related": {
     "dailyTarot": "Ежедневное Таро",
-    "auraReading": "Чтение ауры",
     "zodiacMatch": "Совместимость знаков",
-    "soulAge": "Возраст души"
+    "soulAge": "Возраст души",
+    "futureSelf": "Будущее я"
   }
 }

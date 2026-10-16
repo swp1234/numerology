@@ -108,8 +108,8 @@
   },
   "related": {
     "dailyTarot": "Tarot diario",
-    "auraReading": "Lectura de aura",
     "zodiacMatch": "Compatibilidad zodiacal",
-    "soulAge": "Edad del alma"
+    "soulAge": "Edad del alma",
+    "futureSelf": "Yo Futuro"
   }
 }
