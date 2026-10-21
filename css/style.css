@@ -1098,13 +1098,17 @@ body {
 .back-link {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    min-width: 44px;
+    box-sizing: border-box;
     gap: 8px;
     color: var(--primary-color);
     text-decoration: none;
     font-weight: 600;
     font-size: 14px;
     transition: var(--transition);
-    padding: 8px 16px;
+    padding: 10px 16px;
     border-radius: 6px;
 }
 
@@ -1184,6 +1188,10 @@ body {
     position: absolute;
     top: -40px;
     left: 0;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    box-sizing: border-box;
     background: var(--primary-color);
     color: var(--bg-dark);
     padding: 8px;
@@ -1246,6 +1254,8 @@ body {
     .primary-btn,
     .secondary-btn,
     .premium-btn {
+        min-height: 44px;
+        box-sizing: border-box;
         padding: 12px 16px;
         font-size: 14px;
     }
@@ -1274,7 +1284,9 @@ body {
 
     .tab-btn {
         font-size: 11px;
-        padding: 8px 10px;
+        min-height: 44px;
+        box-sizing: border-box;
+        padding: 10px 10px;
         min-width: 80px;
     }
 
