@@ -99,12 +99,6 @@ class NumerologyApp {
 
         // AI Analysis buttons
         document.getElementById('ai-life-analysis').addEventListener('click', () => this.showAIAnalysis('life'));
-
-        // Ad countdown
-        const closeAdBtn = document.getElementById('close-ad');
-        if (closeAdBtn) {
-            closeAdBtn.addEventListener('click', () => this.closeInterstitialAd());
-        }
     }
 
     toggleTheme() {
@@ -511,10 +505,7 @@ class NumerologyApp {
         }
     }
 
-    closeInterstitialAd() {
-        const ad = document.getElementById('interstitial-ad');
-        ad.classList.add('hidden');
-    }
+    
 
     loadSavedData() {
         const savedDate = localStorage.getItem('saved_birth_date');
