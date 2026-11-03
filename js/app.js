@@ -22,6 +22,7 @@ class NumerologyApp {
 
             // Setup event listeners
             this.setupEventListeners();
+            this.initRelatedFunnels();
 
             // Hide loader
             setTimeout(() => {
@@ -574,6 +575,27 @@ class NumerologyApp {
                 }, 3000);
             }
         }
+    }
+
+    
+    initRelatedFunnels() {
+        const lang = (window.i18n && window.i18n.currentLang) || 'ko';
+        document.querySelectorAll('.related-card[data-base-href]').forEach(card => {
+            const base = card.getAttribute('data-base-href');
+            card.href = base + (lang !== 'en' ? '?lang=' + encodeURIComponent(lang) : '');
+            if (!card.dataset.funnelBound) {
+                card.dataset.funnelBound = 'true';
+                card.addEventListener('click', () => {
+                    if (typeof gtag === 'function') {
+                        gtag('event', 'content_cta_click', {
+                            from_test: 'numerology',
+                            target_test: base.replace(/\//g, ''),
+                            language: lang
+                        });
+                    }
+                });
+            }
+        });
     }
 
     showEmptyStateHint() {
