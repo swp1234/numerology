@@ -8,7 +8,7 @@
   "header": {
     "title": "🔢 Numerologie",
     "tagline": "Entdecke dein Schicksal durch Zahlen",
-    "users": "<strong>2,847</strong> Personen haben heute berechnet"
+    "users": "Pythagoreische Numerologie · 100 % private Reflexion"
   },
   "tabs": {
     "lifeNumber": "🌟 Lebensweg",
@@ -111,5 +111,21 @@
     "zodiacMatch": "Sternzeichen-Match",
     "soulAge": "Seelenalter",
     "futureSelf": "Zukunfts-Ich"
+  },
+  "about": {
+    "toggle": "Über Numerologie & Pythagoreische Arithmologie",
+    "heading1": "Pythagoreische Arithmologie & Zahlensymbolik",
+    "text1": "Die Numerologie geht auf Pythagoras von Samos (ca. 570–495 v. Chr.) zurück, für den Zahlen die Urbausteine der Wirklichkeit darstellten. Durch Quersummenreduktion spiegeln die Zahlen 1 bis 9 sowie die Meisterzahlen 11, 22 und 33 universelle Lebensthemen wider.",
+    "heading2": "Sinnsuche und psychologische Archetypen",
+    "text2": "C.G. Jung verstand Zahlen als ordnende Archetypen der Psyche. Die Analyse der Lebenszahl inspiriert zu achtsamer Selbsterkenntnis und fördert das Verständnis eigener Potenziale.",
+    "faqTitle": "Häufig gestellte Fragen (FAQ)",
+    "faq1Q": "Wie wird die Lebenswegzahl berechnet?",
+    "faq1A": "Durch schrittweise Bildung der Quersumme aus dem Geburtsdatum bis zu einer Ziffer (1–9) oder einer Meisterzahl (11, 22, 33).",
+    "faq2Q": "Handelt es sich um ein wissenschaftliches Vorhersagetool?",
+    "faq2A": "Nein. Numerologie ist ein symbolisches Selbsterfahrungsmodell zur persönlichen Reflexion.",
+    "faq3Q": "Werden Geburtsdaten oder Namen extern gespeichert?",
+    "faq3A": "Niemals. Alle Berechnungen laufen zu 100 % lokal in Ihrem Webbrowser.",
+    "reviewDate": "Redaktionelle Prüfung: November 2026",
+    "reviewTeam": "DopaBrain Symbolsysteme & Kognitionsarchetypen"
   }
 }

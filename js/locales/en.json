@@ -8,7 +8,7 @@
   "header": {
     "title": "🔢 Numerology",
     "tagline": "Discover your destiny through numbers",
-    "users": "<strong>2,847</strong> people calculated today"
+    "users": "Pythagorean Numerology · 100% Private Reflection"
   },
   "tabs": {
     "lifeNumber": "🌟 Life Path",
@@ -111,5 +111,21 @@
     "zodiacMatch": "Zodiac Match",
     "soulAge": "Soul Age",
     "futureSelf": "Future Self"
+  },
+  "about": {
+    "toggle": "About Numerology & Pythagorean Arithmology",
+    "heading1": "Pythagorean Arithmology & Mathematical Archetypes",
+    "text1": "Numerology traces its roots to Pythagoras of Samos (c. 570–495 BCE), who posited that numbers form the underlying harmonic fabric of reality. Through digital root reduction, each compound integer simplifies to core vibrations (1 through 9) or Master Numbers (11, 22, 33), representing universal archetypes of leadership, collaboration, expression, and insight.",
+    "heading2": "Symbolic Contemplation & Personal Reflection",
+    "text2": "In analytical psychology, Carl Jung described numbers as fundamental archetypes of order. Exploring life path and expression numbers offers an intuitive framework for self-discovery, helping individuals examine their strengths, communication habits, and vocational aspirations with mindfulness.",
+    "faqTitle": "Frequently Asked Questions",
+    "faq1Q": "What is the historical and mathematical origin of Life Path numbers?",
+    "faq1A": "Life Path calculations stem from Pythagorean arithmology and the digital root reduction algorithm. In ancient Greek philosophy, numbers represented structural archetypes of universal harmony.",
+    "faq2Q": "Is numerology a scientifically validated diagnostic tool?",
+    "faq2A": "No. Numerology is a contemplative, symbolic framework and introspective tradition. Carl Jung noted that numbers function psychologically as archetypes of order. It serves as an engaging mirror for personal reflection.",
+    "faq3Q": "Are my birth date and calculated numbers stored on external servers?",
+    "faq3A": "Never. All calculations occur 100% locally within your device's web browser. No personal birth dates, names, or numerology outputs are ever transmitted or saved on external servers.",
+    "reviewDate": "Editorial Review: November 2026",
+    "reviewTeam": "DopaBrain Symbolic Systems & Cognitive Archetypes Series"
   }
 }

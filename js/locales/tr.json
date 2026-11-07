@@ -8,7 +8,7 @@
   "header": {
     "title": "🔢 Numeroloji",
     "tagline": "Rakamlar aracılığıyla kaderinizi keşfedin",
-    "users": "Bugün <strong>2,847</strong> kişi hesapladı"
+    "users": "Pisagor Nümerolojisi · %100 Gizli Kişisel Değerlendirme"
   },
   "tabs": {
     "lifeNumber": "🌟 Yaşam Yolu",
@@ -111,5 +111,21 @@
     "zodiacMatch": "Burç Uyumu",
     "soulAge": "Ruh Yaşı",
     "futureSelf": "Gelecekteki Ben"
+  },
+  "about": {
+    "toggle": "Nümeroloji ve Pisagor Sayı Felsefesi Hakkında",
+    "heading1": "Pisagor Aritmolojisi ve Evrensel Sayı Arketipleri",
+    "text1": "Nümeroloji, 'Evren sayılardan ibarettir' diyen Pisagor'a (M.Ö. 570–495) kadar uzanır. Dijital kök indirgeme yöntemiyle doğum tarihleri 1-9 arası temel sayılara ve 11, 22, 33 Üstat Sayılarına dönüştürülür.",
+    "heading2": "Sembolik Tefekkür ve Bilişsel Arketipler",
+    "text2": "Carl Jung, sayıları insan zihnindeki düzenin en ilksel arketipleri olarak tanımlamıştır. Yaşam yolu sayısını incelemek, yeteneklerinizi ve içsel hedeflerinizi keşfetmeniz için ilham verici bir aynadır.",
+    "faqTitle": "Sıkça Sorulan Sorular (FAQ)",
+    "faq1Q": "Yaşam Yolu Sayısı nasıl hesaplanır?",
+    "faq1A": "Doğum tarihinizdeki tüm rakamlar tek bir basamağa (1-9) veya 11, 22, 33 üstat sayılarına ulaşana dek toplanır.",
+    "faq2Q": "Nümeroloji kesin bir kader belirler mi?",
+    "faq2A": "Hayır. Kişisel farkındalık ve iç gözlem sunan felsefi bir sembolizm aracıdır.",
+    "faq3Q": "Doğum tarihim veya adım sunucularda saklanıyor mu?",
+    "faq3A": "Asla. Tüm hesaplama tamamen tarayıcınızın belleğinde %100 yerel olarak gerçekleştirilir.",
+    "reviewDate": "Editoryal İnceleme: Kasım 2026",
+    "reviewTeam": "DopaBrain Sembolik Sistemler ve Bilişsel Arketipler Serisi"
   }
 }

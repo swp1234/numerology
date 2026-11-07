@@ -8,7 +8,7 @@
   "header": {
     "title": "🔢 Numerologia",
     "tagline": "Descubra seu destino através dos números",
-    "users": "<strong>2,847</strong> pessoas calcularam hoje"
+    "users": "Numerologia Pitagórica · Reflexão 100% Privada"
   },
   "tabs": {
     "lifeNumber": "🌟 Número da Vida",
@@ -111,5 +111,21 @@
     "zodiacMatch": "Compatibilidade zodiacal",
     "soulAge": "Idade da alma",
     "futureSelf": "Eu Futuro"
+  },
+  "about": {
+    "toggle": "Sobre a Numerologia e a Filosofia Pitagórica",
+    "heading1": "Aritmologia Pitagórica e Arquétipos Universais",
+    "text1": "A numerologia remonta a Pitágoras (c. 570–495 a.C.), que concebia os números como as matrizes vibratórias do cosmos. Pela redução dígito a dígito, simplifica-se o nascimento aos arquétipos de 1 a 9 e aos Números Mestres (11, 22, 33).",
+    "heading2": "Contemplação Simbólica e Autoconhecimento",
+    "text2": "Carl Jung reconheceu os números como arquétipos estruturantes da mente. Conhecer seu caminho de vida é um convite reflexivo para reconhecer talentos, desafios e vocação com serenidade.",
+    "faqTitle": "Perguntas Frequentes (FAQ)",
+    "faq1Q": "Como é calculado o Número do Caminho de Vida?",
+    "faq1A": "Somando os dígitos da data de nascimento de forma sequencial até chegar a um único dígito (1 a 9) ou aos números mestres 11, 22 e 33.",
+    "faq2Q": "A numerologia é uma ciência preditiva exata?",
+    "faq2A": "Não. É uma tradição simbólica e introspectiva de apoio ao autoconhecimento.",
+    "faq3Q": "Minha data de nascimento é compartilhada?",
+    "faq3A": "Nunca. Os cálculos são 100% locais no navegador do seu dispositivo.",
+    "reviewDate": "Revisão Editorial: Novembro 2026",
+    "reviewTeam": "DopaBrain Série de Sistemas Simbólicos e Arquétipos Cognitivos"
   }
 }

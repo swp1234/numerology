@@ -8,7 +8,7 @@
   "header": {
     "title": "🔢 Numerologi",
     "tagline": "Temukan takdir Anda melalui angka-angka",
-    "users": "<strong>2,847</strong> orang menghitung hari ini"
+    "users": "Numerologi Pythagoras · Refleksi 100% Privat"
   },
   "tabs": {
     "lifeNumber": "🌟 Angka Kehidupan",
@@ -111,5 +111,21 @@
     "zodiacMatch": "Kecocokan Zodiak",
     "soulAge": "Usia Jiwa",
     "futureSelf": "Diri Masa Depan"
+  },
+  "about": {
+    "toggle": "Tentang Numerologi & Filosofi Angka Pythagoras",
+    "heading1": "Aritmologi Pythagoras & Simbolisme Angka",
+    "text1": "Numerologi berakar dari ajaran Pythagoras (± 570–495 SM) bahwa seluruh alam semesta tersusun dari harmoni angka. Melalui reduksi akar digital, tanggal lahir disederhanakan menjadi angka inti 1 hingga 9 serta Master Number (11, 22, 33).",
+    "heading2": "Refleksi Diri dan Arketipe Psikologis",
+    "text2": "Carl Jung memandang angka sebagai arketipe dasar penataan jiwa. Mempelajari angka jalan hidup membuka ruang kesadaran untuk mengevaluasi kekuatan, pola komunikasi, dan tujuan hidup.",
+    "faqTitle": "Pertanyaan yang Sering Diajukan (FAQ)",
+    "faq1Q": "Bagaimana cara kerja perhitungan Life Path Number?",
+    "faq1A": "Angka tanggal lahir dijumlahkan secara berurutan hingga menghasilkan angka tunggal (1-9) atau angka master 11, 22, 33.",
+    "faq2Q": "Apakah numerologi meramal masa depan secara mutlak?",
+    "faq2A": "Tidak. Numerologi adalah alat refleksi filosofis dan eksplorasi potensi diri, bukan ramalan pasti.",
+    "faq3Q": "Apakah tanggal lahir saya disimpan di server luar?",
+    "faq3A": "Sama sekali tidak. Seluruh komputasi berjalan 100% lokal di browser Anda.",
+    "reviewDate": "Tinjauan Editorial: November 2026",
+    "reviewTeam": "DopaBrain Seri Sistem Simbolik & Arketipe Kognitif"
   }
 }

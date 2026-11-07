@@ -8,7 +8,7 @@
   "header": {
     "title": "🔢 Numérologie",
     "tagline": "Découvrez votre destinée à travers les nombres",
-    "users": "<strong>2,847</strong> personnes ont calculé aujourd'hui"
+    "users": "Numérologie Pythagoricienne · Réflexion 100% Privée"
   },
   "tabs": {
     "lifeNumber": "🌟 Nombre de Vie",
@@ -111,5 +111,21 @@
     "zodiacMatch": "Compatibilité zodiacale",
     "soulAge": "Âge de l'âme",
     "futureSelf": "Soi Futur"
+  },
+  "about": {
+    "toggle": "À propos de la Numérologie & Philosophie Pythagoricienne",
+    "heading1": "Arithmologie Pythagoricienne et Symboles Universels",
+    "text1": "La numérologie s'inspire de Pythagore (v. 570–495 av. J.-C.), selon qui les nombres ordonnent l'harmonie de l'univers. Par la réduction théosophique, chaque date se résume aux vibrations fondamentales de 1 à 9 et aux Maîtres Nombres (11, 22, 33).",
+    "heading2": "Exploration Intérieure et Archétypes Jungiens",
+    "text2": "Carl Jung qualifiait les nombres d'archétypes de l'ordre. Calculer son chemin de vie offre une grille de lecture intuitive propice à la pleine conscience et au discernement personnel.",
+    "faqTitle": "Foire Aux Questions (FAQ)",
+    "faq1Q": "Comment calcule-t-on le Chemin de Vie ?",
+    "faq1A": "En additionnant successivement les chiffres de votre date de naissance jusqu'à obtenir un chiffre entre 1 et 9, ou un maître nombre (11, 22, 33).",
+    "faq2Q": "La numérologie détermine-t-elle l'avenir ?",
+    "faq2A": "Non. C'est une démarche introspective et philosophique conçue pour éclairer la connaissance de soi.",
+    "faq3Q": "Les données saisies sont-elles enregistrées ?",
+    "faq3A": "Jamais. Tout fonctionne à 100% localement dans votre navigateur sans aucune transmission.",
+    "reviewDate": "Revue Éditoriale : Novembre 2026",
+    "reviewTeam": "DopaBrain Systèmes Symboliques & Archétypes Cognitifs"
   }
 }
