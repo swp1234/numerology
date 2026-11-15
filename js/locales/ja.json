@@ -53,10 +53,12 @@
     "luckyColor": "🎨 幸運色",
     "luckyDay": "📅 幸運日",
     "compatible": "🔗 相性数",
-    "deepAnalysis": "AI深層分析を見る",
-    "deepAnalysisTitle": "AI深層分析",
-    "badge": "✨ AI深層分析",
-    "share": "結果をシェア"
+    "deepAnalysis": "深層数秘術リーディングを見る",
+    "deepAnalysisTitle": "深層数秘術リーディング",
+    "badge": "✨ 深層数秘術分析",
+    "share": "結果をシェア",
+    "saveCard": "📸 カード画像を保存",
+    "cardSaved": "ストーリーカードを保存しました！"
   },
   "ads": {
     "banner": "広告エリア",
@@ -87,7 +89,7 @@
     "life": "私の人生数は",
     "lifeNum": "番",
     "lifeMsg": "です！",
-    "aiLife": "AI分析の私の運命数！神秘的な意味を発見してください！",
+    "aiLife": "私のライフパスナンバー深層リーディングを見てみよう！",
     "express": "私の表現数は",
     "expressNum": "番",
     "expressMsg": "の隠された意味",
@@ -110,7 +112,9 @@
     "dailyTarot": "デイリータロット",
     "zodiacMatch": "星座相性",
     "soulAge": "魂の年齢",
-    "futureSelf": "未来の自分"
+    "futureSelf": "未来の自分",
+    "attachmentStyle": "愛着スタイル診断",
+    "toxicTrait": "隠れトキシック診断"
   },
   "about": {
     "toggle": "数秘術（ヌメロロジー）とピタゴラス数論について",
@@ -127,5 +131,20 @@
     "faq3A": "一切送信されません。すべての計算はお使いの端末のブラウザ内で100%ローカルに処理され、プライバシーは完全に保護されます。",
     "reviewDate": "監修・編集レビュー: 2026年11月",
     "reviewTeam": "DopaBrain 象徴体系＆認知心理学研究チーム"
+  },
+  "curated": {
+    "badge": "おすすめガイド",
+    "title": "数秘術と象徴的アーキタイプを深める本",
+    "disclosure": "厳選セレクション · 追加費用なしで少額の紹介料を受け取る場合があります",
+    "completeNumerology": {
+      "title": "ザ・コンプリート・ブック・オブ・ヌメロロジー",
+      "author": "デヴィッド・A・フィリップス",
+      "why": "ピタゴラス数秘術のライフパスナンバーや人生周期を体系的に学べる定番書。"
+    },
+    "manAndSymbols": {
+      "title": "人間と象徴 (Man and His Symbols)",
+      "author": "カール・G・ユング",
+      "why": "自己理解の背景にあるアーキタイプと象徴の働きを探る名著。"
+    }
   }
 }

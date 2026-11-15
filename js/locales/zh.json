@@ -53,10 +53,12 @@
     "luckyColor": "🎨 幸运颜色",
     "luckyDay": "📅 幸运日",
     "compatible": "🔗 配对数字",
-    "deepAnalysis": "查看 AI 深层分析",
-    "deepAnalysisTitle": "AI 深层分析",
-    "badge": "✨ AI 深层分析",
-    "share": "分享结果"
+    "deepAnalysis": "查看深度生命灵数解析",
+    "deepAnalysisTitle": "深度生命灵数解析",
+    "badge": "✨ 深度灵数解析",
+    "share": "分享结果",
+    "saveCard": "📸 保存故事卡片",
+    "cardSaved": "已保存分享卡片！"
   },
   "ads": {
     "banner": "广告区域",
@@ -87,7 +89,7 @@
     "life": "我的生命路径数是",
     "lifeNum": "号",
     "lifeMsg": "！",
-    "aiLife": "AI分析的我的命运数字！发现其神秘含义！",
+    "aiLife": "快来看看我的生命灵数深度解析报告！",
     "express": "我的表达数是",
     "expressNum": "号",
     "expressMsg": "的隐藏含义",
@@ -110,7 +112,9 @@
     "dailyTarot": "每日塔罗",
     "zodiacMatch": "星座配对",
     "soulAge": "灵魂年龄",
-    "futureSelf": "未来自画像"
+    "futureSelf": "未来自画像",
+    "attachmentStyle": "依恋风格测试",
+    "toxicTrait": "隐性有毒特质测试"
   },
   "about": {
     "toggle": "关于生命密码数秘学与毕达哥拉斯数论",
@@ -127,5 +131,20 @@
     "faq3A": "绝不。全部数字求和与属性匹配逻辑均在浏览器本地内存中即时完成，不向外部服务器传输或存储任何数据。",
     "reviewDate": "学术与编辑审阅：2026年11月",
     "reviewTeam": "DopaBrain 象征哲学与认知心理学研究组"
+  },
+  "curated": {
+    "badge": "精选阅读指南",
+    "title": "深入探索生命灵数与象征原型",
+    "disclosure": "精选推荐 · 在不增加您费用的前提下可能获得微薄佣金",
+    "completeNumerology": {
+      "title": "生命灵数全书 (The Complete Book of Numerology)",
+      "author": "David A. Phillips",
+      "why": "系统解读毕达哥拉斯生命路径数、表达层面与个人周期的实用指南。"
+    },
+    "manAndSymbols": {
+      "title": "人类及其象征 (Man and His Symbols)",
+      "author": "卡尔·荣格",
+      "why": "剖析自我探索背后象征模式与心灵原型的经典著作。"
+    }
   }
 }

@@ -13,7 +13,7 @@
 
     <title>Numerology Calculator — Reveal Your Life Path Number Free</title>
     <meta name="description" content="Enter your birthday and instantly uncover your life path number, expression number & master numbers. Free numerology calculator with detailed readings.">
-    <meta name="dateModified" content="2026-11-07">
+    <meta name="dateModified" content="2026-11-15">
     <meta name="theme-color" content="#f1c40f">
     <meta name="keywords" content="numerology calculator, life path number, numerology free, numerology calculator free, expression number, master number, birthday numerology, name numerology, numerology reading, 수비학, 운명의 숫자, 인생경로숫자, 생년월일 계산">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3600813755953882" crossorigin="anonymous"></script>
@@ -292,19 +292,20 @@
 
                     <div class="action-buttons">
                         <!-- Canvas for image generation -->
-                        <canvas id="result-canvas-life" width="1080" height="1080" style="display:none;"></canvas>
+                        <canvas id="result-canvas-life" width="1080" height="1920" style="display:none;"></canvas>
                         <button class="secondary-btn" id="share-life" data-i18n="common.share">결과 공유하기</button>
+                        <button class="secondary-btn" id="save-life-card" data-i18n="common.saveCard">📸 스토리 카드 저장</button>
                         <button class="premium-btn pulse-glow" id="ai-life-analysis">
                             <span class="premium-icon">✨</span>
-                            <span data-i18n="common.deepAnalysis">AI 심층 분석 보기</span>
+                            <span data-i18n="common.deepAnalysis">심층 분석 보기</span>
                         </button>
                     </div>
                 </div>
 
-                <!-- AI Deep Analysis for Life Number -->
+                <!-- Deep Analysis for Life Number -->
                 <div id="ai-life-result" class="result-card premium-result hidden">
-                    <div class="premium-badge" data-i18n="common.badge">✨ AI 심층 분석</div>
-                    <h3 data-i18n="common.deepAnalysisTitle">AI 심층 분석</h3>
+                    <div class="premium-badge" data-i18n="common.badge">✨ 심층 수비학 분석</div>
+                    <h3 data-i18n="common.deepAnalysisTitle">심층 수비학 분석</h3>
 
                     <div class="premium-section">
                         <h4 class="premium-section-title" data-i18n="premium.lifePurpose">🎯 당신의 소명(Life Purpose)</h4>
@@ -331,6 +332,15 @@
                         <canvas id="result-canvas-ai-life" width="1080" height="1080" style="display:none;"></canvas>
                         <button class="secondary-btn" id="share-ai-life" data-i18n="common.share">결과 공유하기</button>
                     </div>
+                </div>
+
+                <div id="curated-resources-card" class="curated-resources-card hidden">
+                    <div class="curated-header">
+                        <span class="curated-badge" data-i18n="curated.badge">Recommended Guides</span>
+                        <h3 class="curated-title" data-i18n="curated.title">Explore Numerology &amp; Symbolic Archetypes</h3>
+                    </div>
+                    <div class="curated-list" id="curated-resources-list"></div>
+                    <p class="curated-disclosure" data-i18n="curated.disclosure">Curated picks · May earn a small commission at no extra cost</p>
                 </div>
             </section>
 
@@ -447,7 +457,7 @@
 
         <!-- About Section -->
         <section class="about-section collapsible-section" id="about-section">
-          <details>
+          <details open>
             <summary data-i18n="about.toggle" style="min-height:48px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;">About Numerology & Pythagorean Arithmology</summary>
             <div class="about-content">
               <h2 data-i18n="about.heading1" style="font-size:16px;color:var(--primary-color,#f1c40f);margin:16px 0 8px;">Pythagorean Arithmology & Mathematical Archetypes</h2>
@@ -503,9 +513,7 @@
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
                 navigator.serviceWorker.register('sw.js')
-                    .then(registration => console.log('Service Worker registered'))
                     .catch(error => {
-                        console.log('Service Worker registration failed:', error);
                         if (window.errorHandler) {
                             window.errorHandler.handleError(error, 'Service Worker Registration');
                         }
@@ -514,32 +522,32 @@
         }
     </script>
 
-  <div class="related-tests" style="max-width:480px;margin:20px auto;">
+  <div class="related-tests" style="max-width:480px;margin:20px auto;padding:0 16px;box-sizing:border-box;">
     <h3 data-i18n="result.moreTests" style="font-size:16px;color:#a0a0b8;margin-bottom:12px;text-align:center;">Explore More Tests</h3>
-    <div class="related-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
-      <a href="/daily-tarot/" data-base-href="/daily-tarot/" class="related-card" style="--card-color:#9b59b6;display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 8px;min-height:44px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;text-decoration:none;color:#fff;">
+    <div class="related-grid" style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;">
+      <a href="/daily-tarot/" data-base-href="/daily-tarot/" class="related-card" style="--card-color:#9b59b6;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:14px 8px;min-height:44px;min-width:0;box-sizing:border-box;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;text-decoration:none;color:#fff;">
         <span style="font-size:28px;">🔮</span>
-        <span data-i18n="related.dailyTarot" style="font-size:12px;font-weight:600;color:#a0a0b8;">Daily Tarot</span>
+        <span data-i18n="related.dailyTarot" style="font-size:12px;font-weight:600;color:#a0a0b8;text-align:center;">Daily Tarot</span>
       </a>
-      <a href="/future-self/" data-base-href="/future-self/" class="related-card" style="--card-color:#8e44ad;display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 8px;min-height:44px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;text-decoration:none;color:#fff;">
+      <a href="/future-self/" data-base-href="/future-self/" class="related-card" style="--card-color:#8e44ad;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:14px 8px;min-height:44px;min-width:0;box-sizing:border-box;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;text-decoration:none;color:#fff;">
         <span style="font-size:28px;">⏳</span>
-        <span data-i18n="related.futureSelf" style="font-size:12px;font-weight:600;color:#a0a0b8;">Aura Reading</span>
+        <span data-i18n="related.futureSelf" style="font-size:12px;font-weight:600;color:#a0a0b8;text-align:center;">Future Self</span>
       </a>
-      <a href="/zodiac-match/" data-base-href="/zodiac-match/" class="related-card" style="--card-color:#e74c3c;display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 8px;min-height:44px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;text-decoration:none;color:#fff;">
+      <a href="/zodiac-match/" data-base-href="/zodiac-match/" class="related-card" style="--card-color:#e74c3c;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:14px 8px;min-height:44px;min-width:0;box-sizing:border-box;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;text-decoration:none;color:#fff;">
         <span style="font-size:28px;">♈</span>
-        <span data-i18n="related.zodiacMatch" style="font-size:12px;font-weight:600;color:#a0a0b8;">Zodiac Match</span>
+        <span data-i18n="related.zodiacMatch" style="font-size:12px;font-weight:600;color:#a0a0b8;text-align:center;">Zodiac Match</span>
       </a>
-      <a href="/soul-age/" data-base-href="/soul-age/" class="related-card" style="--card-color:#f39c12;display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 8px;min-height:44px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;text-decoration:none;color:#fff;">
+      <a href="/soul-age/" data-base-href="/soul-age/" class="related-card" style="--card-color:#f39c12;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:14px 8px;min-height:44px;min-width:0;box-sizing:border-box;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;text-decoration:none;color:#fff;">
         <span style="font-size:28px;">🌟</span>
-        <span data-i18n="related.soulAge" style="font-size:12px;font-weight:600;color:#a0a0b8;">Soul Age</span>
+        <span data-i18n="related.soulAge" style="font-size:12px;font-weight:600;color:#a0a0b8;text-align:center;">Soul Age</span>
       </a>
-      <a href="/attachment-style/" data-base-href="/attachment-style/" class="related-card" style="--card-color:#f472b6;display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 8px;min-height:44px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;text-decoration:none;color:#fff;">
+      <a href="/attachment-style/" data-base-href="/attachment-style/" class="related-card" style="--card-color:#f472b6;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:14px 8px;min-height:44px;min-width:0;box-sizing:border-box;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;text-decoration:none;color:#fff;">
         <span style="font-size:28px;">&#129504;</span>
-        <span style="font-size:12px;font-weight:600;color:#a0a0b8;">Attachment Style</span>
+        <span data-i18n="related.attachmentStyle" style="font-size:12px;font-weight:600;color:#a0a0b8;text-align:center;">Attachment Style</span>
       </a>
-      <a href="/toxic-trait/" data-base-href="/toxic-trait/" class="related-card" style="--card-color:#e11d48;display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 8px;min-height:44px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;text-decoration:none;color:#fff;">
+      <a href="/toxic-trait/" data-base-href="/toxic-trait/" class="related-card" style="--card-color:#e11d48;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:14px 8px;min-height:44px;min-width:0;box-sizing:border-box;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;text-decoration:none;color:#fff;">
         <span style="font-size:28px;">&#128128;</span>
-        <span style="font-size:12px;font-weight:600;color:#a0a0b8;">Toxic Trait</span>
+        <span data-i18n="related.toxicTrait" style="font-size:12px;font-weight:600;color:#a0a0b8;text-align:center;">Toxic Trait</span>
       </a>
     </div>
   </div>

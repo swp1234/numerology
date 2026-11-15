@@ -53,10 +53,12 @@
     "luckyColor": "🎨 행운의 색상",
     "luckyDay": "📅 행운의 날",
     "compatible": "🔗 호환 숫자",
-    "deepAnalysis": "AI 심층 분석 보기",
-    "deepAnalysisTitle": "AI 심층 분석",
-    "badge": "✨ AI 심층 분석",
-    "share": "결과 공유하기"
+    "deepAnalysis": "심층 수비학 분석 보기",
+    "deepAnalysisTitle": "심층 수비학 분석",
+    "badge": "✨ 심층 수비학 분석",
+    "share": "결과 공유하기",
+    "saveCard": "📸 스토리 카드 저장",
+    "cardSaved": "스토리 카드가 저장되었습니다!"
   },
   "ads": {
     "banner": "광고 영역",
@@ -87,7 +89,7 @@
     "life": "내 인생경로숫자는",
     "lifeNum": "번",
     "lifeMsg": "!",
-    "aiLife": "AI가 분석한 내 운명의 숫자! 신비로운 의미를 알아보세요!",
+    "aiLife": "나의 운명의 숫자 심층 수비학 리포트를 확인해보세요!",
     "express": "내 표현숫자는",
     "expressNum": "번",
     "expressMsg": "의 숨은 의미",
@@ -110,7 +112,9 @@
     "dailyTarot": "데일리 타로",
     "zodiacMatch": "별자리 궁합",
     "soulAge": "영혼 나이",
-    "futureSelf": "미래 자아"
+    "futureSelf": "미래 자아",
+    "attachmentStyle": "애착 유형 테스트",
+    "toxicTrait": "독성 성향 테스트"
   },
   "about": {
     "toggle": "수비학(Numerology)과 피타고라스 수론 안내",
@@ -127,5 +131,20 @@
     "faq3A": "전혀 저장되지 않습니다. 수비학 계산과 결과 분석은 사용자 브라우저 내부에서 100% 로컬 연산으로 처리되며 어떠한 개인정보도 외부로 전송되지 않습니다.",
     "reviewDate": "학술 및 편집 검토: 2026년 11월",
     "reviewTeam": "DopaBrain 상징체계 & 인지심리학 연구팀"
+  },
+  "curated": {
+    "badge": "추천 가이드",
+    "title": "수비학과 상징적 원형을 더 깊이 이해하는 도서",
+    "disclosure": "선별 추천 도서 · 추가 비용 없이 소정의 수수료를 받을 수 있습니다",
+    "completeNumerology": {
+      "title": "수비학 완전 입문서 (The Complete Book of Numerology)",
+      "author": "데이비드 A. 필립스",
+      "why": "피타고라스 수비학의 인생 경로 숫자와 개인 주기 해석을 체계적으로 정리한 안내서."
+    },
+    "manAndSymbols": {
+      "title": "인간과 상징 (Man and His Symbols)",
+      "author": "칼 구스타프 융",
+      "why": "수(數)와 보편적 원형이 자기 성찰과 심리 패턴에 작용하는 원리를 담은 대표작."
+    }
   }
 }

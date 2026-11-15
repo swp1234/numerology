@@ -53,10 +53,12 @@
     "luckyColor": "🎨 Cor de Sorte",
     "luckyDay": "📅 Dia de Sorte",
     "compatible": "🔗 Números Compatíveis",
-    "deepAnalysis": "Ver Análise Profunda de IA",
-    "deepAnalysisTitle": "Análise Profunda de IA",
-    "badge": "✨ Análise Profunda de IA",
-    "share": "Compartilhar Resultado"
+    "deepAnalysis": "Ver Leitura Profunda",
+    "deepAnalysisTitle": "Leitura Numerológica Profunda",
+    "badge": "✨ Leitura Profunda",
+    "share": "Compartilhar Resultado",
+    "saveCard": "📸 Salvar Card Story",
+    "cardSaved": "Card salvo com sucesso!"
   },
   "ads": {
     "banner": "Área de Publicidade",
@@ -87,7 +89,7 @@
     "life": "Meu número de caminho de vida é",
     "lifeNum": "número",
     "lifeMsg": "!",
-    "aiLife": "Meu número de destino analisado por IA! Descubra seu significado misterioso!",
+    "aiLife": "Confira minha leitura numerológica profunda do Caminho de Vida!",
     "express": "Meu número de expressão é",
     "expressNum": "número",
     "expressMsg": "significado oculto",
@@ -110,7 +112,9 @@
     "dailyTarot": "Tarot diário",
     "zodiacMatch": "Compatibilidade zodiacal",
     "soulAge": "Idade da alma",
-    "futureSelf": "Eu Futuro"
+    "futureSelf": "Eu Futuro",
+    "attachmentStyle": "Estilo de Apego",
+    "toxicTrait": "Traço Tóxico"
   },
   "about": {
     "toggle": "Sobre a Numerologia e a Filosofia Pitagórica",
@@ -127,5 +131,20 @@
     "faq3A": "Nunca. Os cálculos são 100% locais no navegador do seu dispositivo.",
     "reviewDate": "Revisão Editorial: Novembro 2026",
     "reviewTeam": "DopaBrain Série de Sistemas Simbólicos e Arquétipos Cognitivos"
+  },
+  "curated": {
+    "badge": "Guias Recomendados",
+    "title": "Explore a Numerologia e os Arquétipos Simbólicos",
+    "disclosure": "Seleção curada · Pode gerar uma pequena comissão sem custo extra",
+    "completeNumerology": {
+      "title": "O Livro Completo da Numerologia",
+      "author": "David A. Phillips",
+      "why": "Guia claro sobre números pitagóricos de caminho de vida e ciclos pessoais."
+    },
+    "manAndSymbols": {
+      "title": "O Homem e Seus Símbolos",
+      "author": "Carl G. Jung",
+      "why": "Exploração essencial sobre arquétipos e padrões simbólicos de autoconhecimento."
+    }
   }
 }

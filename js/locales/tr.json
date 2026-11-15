@@ -53,10 +53,12 @@
     "luckyColor": "🎨 Şanslı Renk",
     "luckyDay": "📅 Şanslı Gün",
     "compatible": "🔗 Uyumlu Sayılar",
-    "deepAnalysis": "AI Derin Analizini Görüntüle",
-    "deepAnalysisTitle": "AI Derin Analizi",
-    "badge": "✨ AI Derin Analizi",
-    "share": "Sonucu Paylaş"
+    "deepAnalysis": "Derin Okumayı Görüntüle",
+    "deepAnalysisTitle": "Derin Numeroloji Okuması",
+    "badge": "✨ Derin Numeroloji Okuması",
+    "share": "Sonucu Paylaş",
+    "saveCard": "📸 Hikaye Kartını Kaydet",
+    "cardSaved": "Hikaye kartı kaydedildi!"
   },
   "ads": {
     "banner": "Reklam Alanı",
@@ -87,7 +89,7 @@
     "life": "Benim yaşam yolu sayım",
     "lifeNum": "numara",
     "lifeMsg": "!",
-    "aiLife": "AI tarafından analiz edilen benim kader sayım! Gizemli anlamını keşfedin!",
+    "aiLife": "Yaşam yolu sayısı derin numeroloji okuma sonucuma göz at!",
     "express": "Benim ifade sayım",
     "expressNum": "numara",
     "expressMsg": "gizli anlamı",
@@ -110,7 +112,9 @@
     "dailyTarot": "Günlük Tarot",
     "zodiacMatch": "Burç Uyumu",
     "soulAge": "Ruh Yaşı",
-    "futureSelf": "Gelecekteki Ben"
+    "futureSelf": "Gelecekteki Ben",
+    "attachmentStyle": "Bağlanma Stili",
+    "toxicTrait": "Toksik Özellik"
   },
   "about": {
     "toggle": "Nümeroloji ve Pisagor Sayı Felsefesi Hakkında",
@@ -127,5 +131,20 @@
     "faq3A": "Asla. Tüm hesaplama tamamen tarayıcınızın belleğinde %100 yerel olarak gerçekleştirilir.",
     "reviewDate": "Editoryal İnceleme: Kasım 2026",
     "reviewTeam": "DopaBrain Sembolik Sistemler ve Bilişsel Arketipler Serisi"
+  },
+  "curated": {
+    "badge": "Önerilen Rehberler",
+    "title": "Numeroloji ve Sembolik Arketipleri Keşfet",
+    "disclosure": "Seçilmiş öneriler · Ek ücret olmadan küçük bir komisyon kazanılabilir",
+    "completeNumerology": {
+      "title": "The Complete Book of Numerology",
+      "author": "David A. Phillips",
+      "why": "Pisagor yaşam yolu sayıları ve kişisel döngüler üzerine anlaşılır bir rehber."
+    },
+    "manAndSymbols": {
+      "title": "İnsan ve Sembolleri (Man and His Symbols)",
+      "author": "Carl G. Jung",
+      "why": "Kendini anlama sürecindeki arketipler ve sembolik örüntüler üzerine temel eser."
+    }
   }
 }

@@ -53,10 +53,12 @@
     "luckyColor": "🎨 Glücksfarbe",
     "luckyDay": "📅 Glückstag",
     "compatible": "🔗 Kompatible Zahlen",
-    "deepAnalysis": "KI-Tiefenanalyse anzeigen",
-    "deepAnalysisTitle": "KI-Tiefenanalyse",
-    "badge": "✨ KI-Tiefenanalyse",
-    "share": "Ergebnis teilen"
+    "deepAnalysis": "Tiefe Deutung ansehen",
+    "deepAnalysisTitle": "Tiefe Numerologie-Deutung",
+    "badge": "✨ Tiefe Deutung",
+    "share": "Ergebnis teilen",
+    "saveCard": "📸 Story-Karte speichern",
+    "cardSaved": "Story-Karte gespeichert!"
   },
   "ads": {
     "banner": "Anzeigenbereich",
@@ -87,7 +89,7 @@
     "life": "Meine Lebenspfadnummer ist",
     "lifeNum": "Nummer",
     "lifeMsg": "!",
-    "aiLife": "Meine von KI analysierte Schicksalsnummer! Entdecken Sie ihre geheimnisvolle Bedeutung!",
+    "aiLife": "Entdecke meine tiefe Numerologie-Auswertung der Lebenszahl!",
     "express": "Meine Ausdrucksnummer ist",
     "expressNum": "Nummer",
     "expressMsg": "verborgene Bedeutung",
@@ -110,7 +112,9 @@
     "dailyTarot": "Tages-Tarot",
     "zodiacMatch": "Sternzeichen-Match",
     "soulAge": "Seelenalter",
-    "futureSelf": "Zukunfts-Ich"
+    "futureSelf": "Zukunfts-Ich",
+    "attachmentStyle": "Bindungsstil",
+    "toxicTrait": "Toxischer Zug"
   },
   "about": {
     "toggle": "Über Numerologie & Pythagoreische Arithmologie",
@@ -127,5 +131,20 @@
     "faq3A": "Niemals. Alle Berechnungen laufen zu 100 % lokal in Ihrem Webbrowser.",
     "reviewDate": "Redaktionelle Prüfung: November 2026",
     "reviewTeam": "DopaBrain Symbolsysteme & Kognitionsarchetypen"
+  },
+  "curated": {
+    "badge": "Empfohlene Lektüre",
+    "title": "Numerologie & Symbolische Archetypen vertiefen",
+    "disclosure": "Kuratierte Auswahl · Kleine Provision ohne Mehrkosten möglich",
+    "completeNumerology": {
+      "title": "The Complete Book of Numerology",
+      "author": "David A. Phillips",
+      "why": "Klarer Leitfaden für pythagoreische Lebenszahlen und persönliche Zyklen."
+    },
+    "manAndSymbols": {
+      "title": "Der Mensch und seine Symbole",
+      "author": "Carl G. Jung",
+      "why": "Grundlegendes Werk über Archetypen und symbolische Muster der Selbstreflexion."
+    }
   }
 }

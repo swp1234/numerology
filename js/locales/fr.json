@@ -53,10 +53,12 @@
     "luckyColor": "🎨 Couleur Porte-bonheur",
     "luckyDay": "📅 Jour Porte-bonheur",
     "compatible": "🔗 Nombres Compatibles",
-    "deepAnalysis": "Voir l'Analyse Profonde de l'IA",
-    "deepAnalysisTitle": "Analyse Profonde de l'IA",
-    "badge": "✨ Analyse Profonde de l'IA",
-    "share": "Partager le Résultat"
+    "deepAnalysis": "Voir la Lecture Approfondie",
+    "deepAnalysisTitle": "Lecture Numérologique Approfondie",
+    "badge": "✨ Lecture Approfondie",
+    "share": "Partager le Résultat",
+    "saveCard": "📸 Enregistrer la carte Story",
+    "cardSaved": "Carte enregistrée !"
   },
   "ads": {
     "banner": "Zone Publicitaire",
@@ -87,7 +89,7 @@
     "life": "Mon numéro de chemin de vie est",
     "lifeNum": "numéro",
     "lifeMsg": "!",
-    "aiLife": "Mon numéro de destinée analysé par l'IA! Découvrez sa signification mystérieuse!",
+    "aiLife": "Découvrez mon analyse approfondie de numérologie du chemin de vie !",
     "express": "Mon numéro d'expression est",
     "expressNum": "numéro",
     "expressMsg": "signification cachée",
@@ -110,7 +112,9 @@
     "dailyTarot": "Tarot quotidien",
     "zodiacMatch": "Compatibilité zodiacale",
     "soulAge": "Âge de l'âme",
-    "futureSelf": "Soi Futur"
+    "futureSelf": "Soi Futur",
+    "attachmentStyle": "Style d'Attachement",
+    "toxicTrait": "Trait Toxique"
   },
   "about": {
     "toggle": "À propos de la Numérologie & Philosophie Pythagoricienne",
@@ -127,5 +131,20 @@
     "faq3A": "Jamais. Tout fonctionne à 100% localement dans votre navigateur sans aucune transmission.",
     "reviewDate": "Revue Éditoriale : Novembre 2026",
     "reviewTeam": "DopaBrain Systèmes Symboliques & Archétypes Cognitifs"
+  },
+  "curated": {
+    "badge": "Guides Recommandés",
+    "title": "Explorer la Numérologie et les Archétypes",
+    "disclosure": "Sélection éditoriale · Peut générer une petite commission sans surcoût",
+    "completeNumerology": {
+      "title": "The Complete Book of Numerology",
+      "author": "David A. Phillips",
+      "why": "Guide clair des nombres de chemin de vie pythagoriciens et des cycles personnels."
+    },
+    "manAndSymbols": {
+      "title": "L'Homme et ses symboles",
+      "author": "Carl G. Jung",
+      "why": "Exploration fondatrice des archétypes et des motifs symboliques de la réflexion."
+    }
   }
 }

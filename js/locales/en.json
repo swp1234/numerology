@@ -53,10 +53,12 @@
     "luckyColor": "🎨 Lucky Color",
     "luckyDay": "📅 Lucky Day",
     "compatible": "🔗 Compatible Numbers",
-    "deepAnalysis": "View AI Deep Analysis",
-    "deepAnalysisTitle": "AI Deep Analysis",
-    "badge": "✨ AI Deep Analysis",
-    "share": "Share Result"
+    "deepAnalysis": "View Deep Archetype Reading",
+    "deepAnalysisTitle": "Deep Numerology Reading",
+    "badge": "✨ Deep Numerology Reading",
+    "share": "Share Result",
+    "saveCard": "📸 Save Story Card",
+    "cardSaved": "Story card saved!"
   },
   "ads": {
     "banner": "Advertisement Area",
@@ -87,7 +89,7 @@
     "life": "My life path number is",
     "lifeNum": "number",
     "lifeMsg": "!",
-    "aiLife": "AI analyzed my destiny number! Discover its mysterious meaning!",
+    "aiLife": "I unlocked my deep Numerology Life Path reading!",
     "express": "My expression number is",
     "expressNum": "number",
     "expressMsg": "hidden meaning",
@@ -110,7 +112,9 @@
     "dailyTarot": "Daily Tarot",
     "zodiacMatch": "Zodiac Match",
     "soulAge": "Soul Age",
-    "futureSelf": "Future Self"
+    "futureSelf": "Future Self",
+    "attachmentStyle": "Attachment Style",
+    "toxicTrait": "Toxic Trait"
   },
   "about": {
     "toggle": "About Numerology & Pythagorean Arithmology",
@@ -127,5 +131,20 @@
     "faq3A": "Never. All calculations occur 100% locally within your device's web browser. No personal birth dates, names, or numerology outputs are ever transmitted or saved on external servers.",
     "reviewDate": "Editorial Review: November 2026",
     "reviewTeam": "DopaBrain Symbolic Systems & Cognitive Archetypes Series"
+  },
+  "curated": {
+    "badge": "Recommended Guides",
+    "title": "Explore Numerology & Symbolic Archetypes",
+    "disclosure": "Curated picks · May earn a small commission at no extra cost",
+    "completeNumerology": {
+      "title": "The Complete Book of Numerology",
+      "author": "David A. Phillips",
+      "why": "Clear guide to Pythagorean Life Path numbers, planes of expression, and personal cycles."
+    },
+    "manAndSymbols": {
+      "title": "Man and His Symbols",
+      "author": "Carl G. Jung",
+      "why": "Foundational exploration of archetypes and symbolic patterns behind self-reflection."
+    }
   }
 }

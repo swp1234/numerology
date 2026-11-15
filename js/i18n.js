@@ -6,9 +6,15 @@ class I18n {
     }
 
     detectLanguage() {
-        const savedLang = localStorage.getItem('app_language');
-        if (savedLang && this.supportedLanguages.includes(savedLang)) return savedLang;
-        const browserLang = (navigator.language || navigator.userLanguage).split('-')[0];
+        try {
+            const queryLang = new URLSearchParams(window.location.search || '').get('lang');
+            if (queryLang && this.supportedLanguages.includes(queryLang)) return queryLang;
+        } catch (e) {}
+        try {
+            const savedLang = localStorage.getItem('app_language');
+            if (savedLang && this.supportedLanguages.includes(savedLang)) return savedLang;
+        } catch (e) {}
+        const browserLang = ((navigator.language || navigator.userLanguage) || 'en').split('-')[0];
         if (this.supportedLanguages.includes(browserLang)) return browserLang;
         return 'en';
     }
@@ -20,7 +26,6 @@ class I18n {
             this.translations[lang] = await response.json();
             return true;
         } catch (e) {
-            console.error(`Failed to load ${lang}:`, e);
             if (lang !== 'en') return this.loadTranslations('en');
             return false;
         }
@@ -31,7 +36,7 @@ class I18n {
         let value = this.translations[this.currentLang];
         for (const k of keys) {
             value = value?.[k];
-            if (!value) return key;
+            if (value === undefined || value === null) return key;
         }
         return value;
     }
@@ -40,7 +45,7 @@ class I18n {
         if (!this.supportedLanguages.includes(lang)) return false;
         if (!this.translations[lang]) await this.loadTranslations(lang);
         this.currentLang = lang;
-        localStorage.setItem('app_language', lang);
+        try { localStorage.setItem('app_language', lang); } catch (e) {}
         document.documentElement.lang = lang;
         this.updateUI();
         return true;
@@ -48,14 +53,19 @@ class I18n {
 
     updateUI() {
         document.querySelectorAll('[data-i18n]').forEach(el => {
-            el.textContent = this.t(el.getAttribute('data-i18n'));
+            const val = this.t(el.getAttribute('data-i18n'));
+            if (val !== el.getAttribute('data-i18n')) el.textContent = val;
         });
         document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
-            el.placeholder = this.t(el.getAttribute('data-i18n-placeholder'));
+            const key = el.getAttribute('data-i18n-placeholder');
+            const val = this.t(key);
+            if (val !== key) el.placeholder = val;
         });
-        document.title = this.t('app.title');
+        const titleVal = this.t('app.title');
+        if (titleVal !== 'app.title') document.title = titleVal;
         const meta = document.querySelector('meta[name="description"]');
-        if (meta) meta.content = this.t('app.description');
+        const descVal = this.t('app.description');
+        if (meta && descVal !== 'app.description') meta.content = descVal;
     }
 
     getCurrentLanguage() { return this.currentLang; }
@@ -80,3 +90,4 @@ class I18n {
 }
 
 const i18n = new I18n();
+window.i18n = i18n;

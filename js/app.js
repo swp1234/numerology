@@ -15,6 +15,7 @@ class NumerologyApp {
 
             // Load translations
             await i18n.loadTranslations(i18n.currentLang);
+            document.documentElement.lang = i18n.currentLang;
             i18n.updateUI();
 
             // Initialize theme
@@ -92,8 +93,9 @@ class NumerologyApp {
         // Compatibility calculation
         document.getElementById('calculate-compat-btn').addEventListener('click', () => this.calculateCompatibility());
 
-        // Share buttons
+        // Share & story card buttons
         document.getElementById('share-life').addEventListener('click', () => this.shareResult('life'));
+        document.getElementById('save-life-card')?.addEventListener('click', () => this.generateLifeStoryCard());
         document.getElementById('share-ai-life').addEventListener('click', () => this.shareResult('ai-life'));
         document.getElementById('share-express').addEventListener('click', () => this.shareResult('express'));
         document.getElementById('share-compat').addEventListener('click', () => this.shareResult('compat'));
@@ -118,6 +120,10 @@ class NumerologyApp {
     async changeLanguage(lang) {
         await i18n.setLanguage(lang);
         document.getElementById('lang-menu').classList.add('hidden');
+        this.initRelatedFunnels();
+        if (this.currentLifeNumber) {
+            this.renderCuratedResources();
+        }
     }
 
     switchTab(tabName) {
@@ -146,29 +152,40 @@ class NumerologyApp {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    calculateLifePath() {
+    calculateLifePath(isUserAction = true) {
         const birthDate = document.getElementById('birth-date').value;
         if (!birthDate) {
-            alert(i18n.t('validation.selectDate') || 'Please select a date');
+            this.showToast(i18n.t('validation.selectDate') !== 'validation.selectDate' ? i18n.t('validation.selectDate') : 'Please select a date');
             return;
+        }
+
+        if (isUserAction && typeof gtag === 'function') {
+            gtag('event', 'test_start', { event_category: 'numerology', app_name: 'numerology', mode: 'life_path' });
         }
 
         this.birthDate = birthDate;
         const number = NumerologyData.calculateLifePathNumber(birthDate);
 
         if (number === null) {
-            alert(i18n.t('validation.invalidDate') || 'Invalid date');
+            this.showToast(i18n.t('validation.invalidDate') !== 'validation.invalidDate' ? i18n.t('validation.invalidDate') : 'Invalid date');
             return;
         }
 
         this.currentLifeNumber = number;
-        this.displayLifePathResult(number);
+        this.displayLifePathResult(number, isUserAction);
         this.saveData('birthDate', birthDate);
-        if(typeof gtag!=='undefined') gtag('event','calculate_life_path');
-        this.trackEngagement('calculate_life_path');
+        if (isUserAction && typeof gtag === 'function') {
+            gtag('event', 'calculate_life_path', { event_category: 'numerology' });
+            gtag('event', 'test_complete', {
+                event_category: 'numerology',
+                app_name: 'numerology',
+                result_type: `life_path_${number}`
+            });
+            this.trackEngagement('calculate_life_path');
+        }
     }
 
-    displayLifePathResult(number) {
+    displayLifePathResult(number, shouldScroll = true) {
         const meaning = NumerologyData.getMeaning(number);
         if (!meaning) return;
 
@@ -219,9 +236,12 @@ class NumerologyApp {
 
         // Show result card
         resultCard.classList.remove('hidden');
+        this.renderCuratedResources();
 
-        // Scroll to result
-        resultCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        // Scroll to result on interactive calculations
+        if (shouldScroll) {
+            resultCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
     }
 
     showAIAnalysis(type) {
@@ -333,13 +353,13 @@ class NumerologyApp {
     calculateExpression() {
         const name = document.getElementById('name-input').value.trim();
         if (!name) {
-            alert(i18n.t('validation.enterName') || 'Please enter a name');
+            this.showToast(i18n.t('validation.enterName') !== 'validation.enterName' ? i18n.t('validation.enterName') : 'Please enter a name');
             return;
         }
 
         const number = NumerologyData.calculateExpressionNumber(name);
         if (number === null || number === 0) {
-            alert(i18n.t('validation.invalidName') || 'Invalid name');
+            this.showToast(i18n.t('validation.invalidName') !== 'validation.invalidName' ? i18n.t('validation.invalidName') : 'Invalid name');
             return;
         }
 
@@ -347,7 +367,14 @@ class NumerologyApp {
         this.name = name;
         this.displayExpressionResult(number, name);
         this.saveData('name', name);
-        if(typeof gtag!=='undefined') gtag('event','calculate_expression');
+        if (typeof gtag === 'function') {
+            gtag('event', 'calculate_expression', { event_category: 'numerology' });
+            gtag('event', 'test_complete', {
+                event_category: 'numerology',
+                app_name: 'numerology',
+                result_type: `expression_${number}`
+            });
+        }
     }
 
     displayExpressionResult(number, name) {
@@ -379,16 +406,24 @@ class NumerologyApp {
     }
 
     calculateCompatibility() {
-        const num1 = parseInt(document.getElementById('compat-num1').value);
-        const num2 = parseInt(document.getElementById('compat-num2').value);
+        const num1 = parseInt(document.getElementById('compat-num1').value, 10);
+        const num2 = parseInt(document.getElementById('compat-num2').value, 10);
 
         if (!num1 || !num2 || num1 < 1 || num1 > 33 || num2 < 1 || num2 > 33) {
-            alert(i18n.t('validation.validNumbers') || 'Please enter valid numbers (1-33)');
+            this.showToast(i18n.t('validation.validNumbers') !== 'validation.validNumbers' ? i18n.t('validation.validNumbers') : 'Please enter valid numbers (1-33)');
             return;
         }
 
         const compatibility = NumerologyData.calculateCompatibility(num1, num2);
         this.displayCompatibilityResult(num1, num2, compatibility);
+        if (typeof gtag === 'function') {
+            const tier = compatibility >= 85 ? 'high' : compatibility >= 65 ? 'balanced' : 'growth';
+            gtag('event', 'test_complete', {
+                event_category: 'numerology',
+                app_name: 'numerology',
+                result_type: `compatibility_${tier}`
+            });
+        }
     }
 
     displayCompatibilityResult(num1, num2, score) {
@@ -470,7 +505,8 @@ class NumerologyApp {
 
     shareResult(type) {
         let shareText = '';
-        let shareUrl = window.location.href;
+        const lang = (window.i18n && window.i18n.currentLang) || i18n.getCurrentLanguage() || 'ko';
+        const shareUrl = `https://dopabrain.com/numerology/?lang=${encodeURIComponent(lang)}&utm_source=share`;
 
         if (type === 'life') {
             const num = this.currentLifeNumber;
@@ -483,26 +519,31 @@ class NumerologyApp {
             const meaning = NumerologyData.getMeaning(num);
             shareText = `💝 ${i18n.t('share.express')} ${num}${i18n.t('share.expressNum')} ${meaning.name}${i18n.t('share.expressMsg')} "${this.name}" ${shareUrl}`;
         } else if (type === 'compat') {
-            const num1 = parseInt(document.getElementById('compat-num1').value);
-            const num2 = parseInt(document.getElementById('compat-num2').value);
+            const num1 = parseInt(document.getElementById('compat-num1').value, 10);
+            const num2 = parseInt(document.getElementById('compat-num2').value, 10);
             const score = NumerologyData.calculateCompatibility(num1, num2);
             shareText = `💫 ${num1}${i18n.t('share.compat')} ${num2}${i18n.t('share.compatNum')} ${score}${i18n.t('share.compatPercent')} ${shareUrl}`;
         }
 
-        // Copy to clipboard
-        if (navigator.clipboard) {
-            navigator.clipboard.writeText(shareText).then(() => {
-                alert(i18n.t('share.copied') || 'Copied to clipboard!');
-            });
-        }
-
-        // Try native share if available
+        const copiedMsg = i18n.t('share.copied') !== 'share.copied' ? i18n.t('share.copied') : 'Copied to clipboard!';
         if (navigator.share) {
             navigator.share({
                 title: 'Numerology Result',
                 text: shareText,
                 url: shareUrl
-            }).catch(err => console.log('Share error:', err));
+            }).catch(() => {});
+        } else if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(shareText).then(() => {
+                this.showToast(copiedMsg);
+            }).catch(() => {});
+        }
+
+        if (typeof gtag === 'function') {
+            gtag('event', 'share', {
+                event_category: 'numerology',
+                method: navigator.share ? 'native' : 'copy',
+                content_type: `numerology_${type}`
+            });
         }
     }
 
@@ -515,10 +556,10 @@ class NumerologyApp {
         if (savedDate) {
             document.getElementById('birth-date').value = savedDate;
         } else {
-            // First visit: auto-fill with sample date and show result immediately
+            // First visit: auto-fill with sample date and show result preview cleanly
             const sampleDate = '1995-06-15';
             document.getElementById('birth-date').value = sampleDate;
-            setTimeout(() => this.calculateLifePath(), 100);
+            setTimeout(() => this.calculateLifePath(false), 100);
         }
         if (savedName) {
             document.getElementById('name-input').value = savedName;
@@ -582,15 +623,16 @@ class NumerologyApp {
         const lang = (window.i18n && window.i18n.currentLang) || 'ko';
         document.querySelectorAll('.related-card[data-base-href]').forEach(card => {
             const base = card.getAttribute('data-base-href');
-            card.href = base + (lang !== 'en' ? '?lang=' + encodeURIComponent(lang) : '');
+            card.href = `${base}?lang=${encodeURIComponent(lang)}&source=numerology_result`;
             if (!card.dataset.funnelBound) {
                 card.dataset.funnelBound = 'true';
                 card.addEventListener('click', () => {
                     if (typeof gtag === 'function') {
                         gtag('event', 'content_cta_click', {
-                            from_test: 'numerology',
-                            target_test: base.replace(/\//g, ''),
-                            language: lang
+                            cta_surface: 'related_tools',
+                            destination: card.getAttribute('href'),
+                            source: 'numerology_result',
+                            lang: (window.i18n && window.i18n.currentLang) || lang
                         });
                     }
                 });
@@ -598,11 +640,211 @@ class NumerologyApp {
         });
     }
 
+    renderCuratedResources() {
+        const card = document.getElementById('curated-resources-card');
+        const list = document.getElementById('curated-resources-list');
+        if (!card || !list) return;
+        const lang = (window.i18n && window.i18n.currentLang) || 'ko';
+        const domains = {
+            ko: 'https://www.amazon.com/dp/{asin}?tag=dopabrain-20',
+            en: 'https://www.amazon.com/dp/{asin}?tag=dopabrain-20',
+            ja: 'https://www.amazon.co.jp/dp/{asin}?tag=dopabrain-20',
+            zh: 'https://www.amazon.com/dp/{asin}?tag=dopabrain-20',
+            es: 'https://www.amazon.es/dp/{asin}?tag=dopabrain-20',
+            pt: 'https://www.amazon.com.br/dp/{asin}?tag=dopabrain-20',
+            hi: 'https://www.amazon.in/dp/{asin}?tag=dopabrain-20',
+            ru: 'https://www.amazon.com/dp/{asin}?tag=dopabrain-20',
+            id: 'https://www.amazon.sg/dp/{asin}?tag=dopabrain-20',
+            tr: 'https://www.amazon.com.tr/dp/{asin}?tag=dopabrain-20',
+            de: 'https://www.amazon.de/dp/{asin}?tag=dopabrain-20',
+            fr: 'https://www.amazon.fr/dp/{asin}?tag=dopabrain-20'
+        };
+        const tr = (k, fb) => {
+            const v = i18n.t(k);
+            return (v && v !== k) ? v : fb;
+        };
+        const books = [
+            {
+                key: 'completeNumerology',
+                asin: '1561705152',
+                icon: '🔢',
+                title: tr('curated.completeNumerology.title', 'The Complete Book of Numerology'),
+                author: tr('curated.completeNumerology.author', 'David A. Phillips'),
+                why: tr('curated.completeNumerology.why', 'Clear guide to Pythagorean Life Path numbers, planes of expression, and personal cycles.')
+            },
+            {
+                key: 'manAndSymbols',
+                asin: '0440351839',
+                icon: '🌌',
+                title: tr('curated.manAndSymbols.title', 'Man and His Symbols'),
+                author: tr('curated.manAndSymbols.author', 'Carl G. Jung'),
+                why: tr('curated.manAndSymbols.why', 'Foundational exploration of archetypes and symbolic patterns behind self-reflection.')
+            }
+        ];
+
+        list.innerHTML = '';
+        books.forEach(book => {
+            const href = (domains[lang] || domains.en).replace('{asin}', book.asin);
+            const item = document.createElement('a');
+            item.className = 'curated-item';
+            item.href = href;
+            item.target = '_blank';
+            item.rel = 'noopener noreferrer sponsored';
+
+            const iconSpan = document.createElement('span');
+            iconSpan.className = 'curated-icon';
+            iconSpan.textContent = book.icon;
+
+            const copyDiv = document.createElement('div');
+            copyDiv.className = 'curated-copy';
+
+            const titleDiv = document.createElement('div');
+            titleDiv.className = 'curated-item-title';
+            titleDiv.textContent = book.title;
+
+            const authorDiv = document.createElement('div');
+            authorDiv.className = 'curated-item-author';
+            authorDiv.textContent = book.author;
+
+            const whyDiv = document.createElement('div');
+            whyDiv.className = 'curated-item-why';
+            whyDiv.textContent = book.why;
+
+            copyDiv.appendChild(titleDiv);
+            copyDiv.appendChild(authorDiv);
+            copyDiv.appendChild(whyDiv);
+
+            const arrowSpan = document.createElement('span');
+            arrowSpan.className = 'curated-arrow';
+            arrowSpan.textContent = '→';
+
+            item.appendChild(iconSpan);
+            item.appendChild(copyDiv);
+            item.appendChild(arrowSpan);
+
+            item.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                    gtag('event', 'curated_resource_click', {
+                        app_name: 'numerology',
+                        resource_key: book.key,
+                        content_locale: lang,
+                        cta_surface: 'curated_resources'
+                    });
+                    gtag('event', 'content_cta_click', {
+                        cta_type: 'curated_book',
+                        destination: href,
+                        source: 'numerology'
+                    });
+                }
+            });
+
+            list.appendChild(item);
+        });
+        card.classList.remove('hidden');
+    }
+
+    generateLifeStoryCard() {
+        const number = this.currentLifeNumber;
+        if (!number) return;
+        const meaning = NumerologyData.getMeaning(number);
+        if (!meaning) return;
+        const canvas = document.getElementById('result-canvas-life');
+        if (!canvas) return;
+        canvas.width = 1080;
+        canvas.height = 1920;
+        const ctx = canvas.getContext('2d');
+
+        const grad = ctx.createLinearGradient(0, 0, 1080, 1920);
+        grad.addColorStop(0, '#0f0f23');
+        grad.addColorStop(0.55, '#191938');
+        grad.addColorStop(1, '#261e14');
+        ctx.fillStyle = grad;
+        ctx.fillRect(0, 0, 1080, 1920);
+
+        ctx.textAlign = 'center';
+        ctx.fillStyle = '#f1c40f';
+        ctx.font = 'bold 34px -apple-system, BlinkMacSystemFont, sans-serif';
+        ctx.fillText('DOPABRAIN · NUMEROLOGY', 540, 180);
+
+        ctx.beginPath();
+        ctx.arc(540, 460, 175, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(241, 196, 15, 0.14)';
+        ctx.fill();
+        ctx.lineWidth = 4;
+        ctx.strokeStyle = 'rgba(241, 196, 15, 0.55)';
+        ctx.stroke();
+
+        ctx.fillStyle = '#f1c40f';
+        ctx.font = 'bold 170px -apple-system, BlinkMacSystemFont, sans-serif';
+        ctx.fillText(String(number), 540, 520);
+
+        ctx.fillStyle = '#ffffff';
+        ctx.font = 'bold 48px -apple-system, BlinkMacSystemFont, sans-serif';
+        ctx.fillText(meaning.name || `Life Path ${number}`, 540, 720);
+
+        ctx.fillStyle = '#cbd5e1';
+        ctx.font = '600 32px -apple-system, BlinkMacSystemFont, sans-serif';
+        const words = (meaning.personality || '').split(' ');
+        const lines = [];
+        let cur = '';
+        words.forEach(w => {
+            const test = cur ? `${cur} ${w}` : w;
+            if (ctx.measureText(test).width > 820 && cur) {
+                lines.push(cur);
+                cur = w;
+            } else {
+                cur = test;
+            }
+        });
+        if (cur) lines.push(cur);
+        lines.slice(0, 6).forEach((line, idx) => {
+            ctx.fillText(line, 540, 820 + idx * 54);
+        });
+
+        ctx.fillStyle = 'rgba(255,255,255,0.72)';
+        ctx.font = '600 30px -apple-system, BlinkMacSystemFont, sans-serif';
+        ctx.fillText('dopabrain.com/numerology', 540, 1740);
+
+        try {
+            const a = document.createElement('a');
+            a.download = `numerology-lifepath-${number}.png`;
+            a.href = canvas.toDataURL('image/png');
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+            const savedMsg = i18n.t('common.cardSaved');
+            this.showToast(savedMsg !== 'common.cardSaved' ? savedMsg : 'Story card saved!');
+        } catch (e) {}
+
+        if (typeof gtag === 'function') {
+            gtag('event', 'save_image', {
+                event_category: 'numerology',
+                app_name: 'numerology',
+                result_type: `life_path_${number}`,
+                save_surface: 'result_story_1080x1920'
+            });
+        }
+    }
+
+    showToast(message) {
+        let toast = document.getElementById('numerology-toast');
+        if (!toast) {
+            toast = document.createElement('div');
+            toast.id = 'numerology-toast';
+            toast.className = 'numerology-toast';
+            document.body.appendChild(toast);
+        }
+        toast.textContent = message;
+        toast.style.display = 'block';
+        clearTimeout(this._toastTimer);
+        this._toastTimer = setTimeout(() => {
+            if (toast) toast.style.display = 'none';
+        }, 2400);
+    }
+
     showEmptyStateHint() {
         // Show hint when result area is empty
         const lifeResult = document.getElementById('life-result');
-        const expressResult = document.getElementById('express-result');
-        
         if (lifeResult && lifeResult.classList.contains('hidden')) {
             const inputCard = document.querySelector('#lifenum-tab .input-card');
             if (inputCard && !inputCard.querySelector('.empty-state-hint')) {
@@ -610,7 +852,8 @@ class NumerologyApp {
                 hint.className = 'empty-state-hint';
                 hint.style.cssText = 'text-align:center;margin-top:16px;padding:12px;background:var(--bg-dark-tertiary);border-radius:8px;color:var(--text-secondary);font-size:13px;opacity:0.9;';
                 hint.setAttribute('data-i18n', 'lifeNumber.emptyHint');
-                hint.textContent = '생년월일을 입력하면 당신의 운명의 숫자를 바로 확인할 수 있어요';
+                const tHint = i18n.t('lifeNumber.emptyHint');
+                hint.textContent = (tHint && tHint !== 'lifeNumber.emptyHint') ? tHint : 'Enter your birth date to discover your Life Path number';
                 inputCard.appendChild(hint);
             }
         }

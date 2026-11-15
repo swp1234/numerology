@@ -53,10 +53,12 @@
     "luckyColor": "🎨 Warna Keberuntungan",
     "luckyDay": "📅 Hari Keberuntungan",
     "compatible": "🔗 Angka yang Kompatibel",
-    "deepAnalysis": "Lihat Analisis Mendalam AI",
-    "deepAnalysisTitle": "Analisis Mendalam AI",
-    "badge": "✨ Analisis Mendalam AI",
-    "share": "Bagikan Hasil"
+    "deepAnalysis": "Lihat Analisis Mendalam",
+    "deepAnalysisTitle": "Analisis Numerologi Mendalam",
+    "badge": "✨ Analisis Mendalam",
+    "share": "Bagikan Hasil",
+    "saveCard": "📸 Simpan Kartu Story",
+    "cardSaved": "Kartu story tersimpan!"
   },
   "ads": {
     "banner": "Area Iklan",
@@ -87,7 +89,7 @@
     "life": "Nomor jalan hidup saya adalah",
     "lifeNum": "nomor",
     "lifeMsg": "!",
-    "aiLife": "Nomor takdir saya dianalisis oleh AI! Temukan maknanya yang misterius!",
+    "aiLife": "Lihat bacaan mendalam angka jalur hidup numerologiku!",
     "express": "Nomor ungkapan saya adalah",
     "expressNum": "nomor",
     "expressMsg": "makna tersembunyi",
@@ -110,7 +112,9 @@
     "dailyTarot": "Tarot Harian",
     "zodiacMatch": "Kecocokan Zodiak",
     "soulAge": "Usia Jiwa",
-    "futureSelf": "Diri Masa Depan"
+    "futureSelf": "Diri Masa Depan",
+    "attachmentStyle": "Gaya Kelekatan",
+    "toxicTrait": "Sifat Toksik"
   },
   "about": {
     "toggle": "Tentang Numerologi & Filosofi Angka Pythagoras",
@@ -127,5 +131,20 @@
     "faq3A": "Sama sekali tidak. Seluruh komputasi berjalan 100% lokal di browser Anda.",
     "reviewDate": "Tinjauan Editorial: November 2026",
     "reviewTeam": "DopaBrain Seri Sistem Simbolik & Arketipe Kognitif"
+  },
+  "curated": {
+    "badge": "Panduan Pilihan",
+    "title": "Jelajahi Numerologi & Arketipe Simbolis",
+    "disclosure": "Pilihan terkurasi · Dapat memperoleh komisi kecil tanpa biaya tambahan",
+    "completeNumerology": {
+      "title": "The Complete Book of Numerology",
+      "author": "David A. Phillips",
+      "why": "Panduan jelas angka jalur hidup Pythagoras dan siklus refleksi pribadi."
+    },
+    "manAndSymbols": {
+      "title": "Man and His Symbols",
+      "author": "Carl G. Jung",
+      "why": "Kajian mendalam tentang arketipe dan pola simbolis di balik refleksi diri."
+    }
   }
 }
