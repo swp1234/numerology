@@ -53,8 +53,9 @@ class I18n {
 
     updateUI() {
         document.querySelectorAll('[data-i18n]').forEach(el => {
-            const val = this.t(el.getAttribute('data-i18n'));
-            if (val !== el.getAttribute('data-i18n')) el.textContent = val;
+            const key = el.getAttribute('data-i18n');
+            const val = this.t(key);
+            if (val && val !== key && !el.querySelector('svg')) el.textContent = val;
         });
         document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
             const key = el.getAttribute('data-i18n-placeholder');
